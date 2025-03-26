@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI 2024 Report Header</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-white">
+    <!-- Header Start -->
+    <nav class="bg-white shadow-md py-4 px-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="/">
+            <img
+              src="/assets/images/csi-logo.png"
+              alt="csi-logo"
+              class="w-48 h-auto"
+          /></a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-black font-medium">Executive Summary</a>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Highlights
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8] w-72"
+            >
+              <a
+                href="/keynote-speeches.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="/csi-awards.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="/human-library-storytelling.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Themes
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden w-72"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+        <button class="md:hidden text-black text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+      <!-- Mobile Menu inside the container -->
+      <div class="container mx-auto">
+        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
+          <a href="#" class="text-black font-medium py-2">Executive Summary</a>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown1')"
+            >
+              Event Highlights
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="/keynote-speeches.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="/csi-awards.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="/human-library-and-story-telling.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown2')"
+            >
+              Event Themes
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium py-2"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Header End -->
+    <!-- Home Banner Start -->
+
+    <div>
+      <img
+        src="/assets/images/home/home-banner.png"
+        class="w-full p-0"
+        alt=""
+      />
+    </div>
+    <!-- Home Banner End -->
+
+    <!-- CMS Section Start -->
+    <div class="bg-[#9250AC] absolute w-full relative">
+      <div class="flex justify-center items-center">
+        <img class="w-40" src="/assets/images/cms-logo.png" alt="" />
+      </div>
+      <div class="text-center text-white p-4">
+        <h2 class="lg:text-4xl text-2xl pt-10 font-semibold">
+          Catalyst Management Services
+        </h2>
+        <p class="lg:w-[55%] pt-5 pb-10 mx-auto">
+          We are a social investment catalyst that partners with change agents
+          to solve complex societal problems, leveraging our 30 years of
+          experience and resources. We are committed to transforming social
+          enterprises and impactful initiatives aligned with Sustainable
+          Development Goals.
+        </p>
+        <p class="pb-10">
+          <a
+            class="text-[#F5D47B] underline"
+            href="https://www.cms.org.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >www.cms.org.in</a
+          >
+        </p>
+      </div>
+      <!-- Top Right Icon -->
+      <img
+        class="lg:w-40 w-24 absolute top-0 right-0"
+        src="/assets/images/home/top-icon.png"
+        alt=""
+      />
+      <!-- Bottom Left Icon -->
+      <img
+        class="lg:w-40 w-24 absolute bottom-0 left-0"
+        src="/assets/images/home/bottom-icon.png"
+        alt=""
+      />
+    </div>
+    <!-- CMS Section End -->
+
+    <!-- 30 Years Section Start -->
+    <div
+      class="text-center bg-white relative flex flex-col justify-center items-center"
+    >
+      <div
+        class="absolute top-0 left-0 w-28 lg:w-40 h-20 bg-cover"
+        style="
+          background-image: url('/assets/images/home/left-icon-30-years.png');
+        "
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-28 lg:w-40 h-20 bg-cover"
+        style="
+          background-image: url('/assets/images/home/right-icon-30-years.png');
+        "
+      ></div>
+
+      <div class="flex justify-center items-center">
+        <img
+          class="lg:w-48 w-32 lg:mt-40 mt-20"
+          src="/assets/images/home/30-years-icon.png"
+          alt="30 Years"
+        />
+      </div>
+      <h2 class="text-[#7F4197] text-2xl lg:text-4xl font-semibold mt-4 italic">
+        of Being Catalysts for Change
+      </h2>
+      <p class="lg:mt-5 mt-3 lg:w-[45%] lg:text-2xl lg:p-0 p-2">
+        <span class="text-[#7F4197] font-bold">CSI 2024</span> marked the
+        30-year milestone of the Catalyst Group, celebrating a legacy of
+        innovation in social impact.
+      </p>
+      <h3 class="font-bold lg:text-3xl text-2xl lg:mt-16 mt-10 italic">
+        Word History of Catalyst
+      </h3>
+      <p class="lg:mt-5 mt-2 lg:p-0 p-2 lg:w-[60%] leading-relaxed lg:text-lg">
+        The term ‘catalyst’ was introduced into the English language in the
+        early 20th century, originating from its scientific use in chemistry. It
+        was derived from ‘catalysis,’ which describes the process where the rate
+        of a chemical reaction is altered by a substance that remains chemically
+        unchanged after the reaction. By the 1940s, the word had taken on a
+        figurative meaning, referring to a person or thing that rapidly
+        instigates change or action.
+      </p>
+      <div>
+        <img src="/assets/images/home/sketch-member.png" alt="" />
+      </div>
+    </div>
+    <!-- 30 Years Section End  -->
+
+    <!-- Explore Chapters Start -->
+
+    <div
+      class="bg-[url('/assets/images/home/bg-explore.png')] bg-no-repeat bg-cover bg-center lg:h-[600px] p-5 w-full flex justify-center items-center"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-center text-3xl font-semibold text-gray-900 mb-6">
+          Explore the Chapters
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 relative lg:mt-16">
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md">
+            <span class="">01.</span>
+            <span class="text-[#7E3F98] mx-4 lg:text-xl"
+              >Executive Summary</span
+            >
+          </div>
+
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md">
+            <span class="">02.</span>
+            <span class="text-[#7E3F98] mx-4 lg:text-xl"
+              >About Catalysing Social Impact (CSI)</span
+            >
+          </div>
+
+          <!-- Dropdown Section -->
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md relative">
+            <div
+              class="flex justify-between items-center cursor-pointer"
+              onclick="toggleDropdown('eventHighlights')"
+            >
+              <span>
+                <span class="">03.</span>
+                <span class="text-[#7E3F98] mx-4 lg:text-xl"
+                  >Event Highlights</span
+                >
+              </span>
+              <span
+                class="transition-transform transform rotate-0"
+                id="icon-eventHighlights"
+                ><i class="fa-solid fa-chevron-down text-[#7E3F98]"></i
+              ></span>
+            </div>
+            <div
+              class="hidden absolute left-0 w-full bg-[#F5D47B] p-3 rounded-none shadow-lg mt-2 z-10"
+              id="eventHighlights"
+            >
+              <ul class="list-disc list-inside text-gray-800 mx-10">
+                <li>Keynote Speeches</li>
+                <li>CSI Awards</li>
+                <li>Performances and Cultural Expressions</li>
+                <li>Human Library and Storytelling</li>
+                <li>Wicked Solutions</li>
+                <li>Film Showcase</li>
+                <li>Exhibitions and Photography</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Another Dropdown Section -->
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md relative">
+            <div
+              class="flex justify-between items-center cursor-pointer"
+              onclick="toggleDropdown('eventThemes')"
+            >
+              <span>
+                <span class="">04.</span>
+                <span class="text-[#7E3F98] mx-4 lg:text-xl">Event Themes</span>
+              </span>
+              <span
+                class="transition-transform transform rotate-0"
+                id="icon-eventThemes"
+                ><i class="fa-solid fa-chevron-down text-[#7E3F98]"></i
+              ></span>
+            </div>
+            <div
+              class="hidden absolute left-0 w-full bg-[#F5D47B] p-3 rounded-none shadow-lg mt-2 z-10"
+              id="eventThemes"
+            >
+              <ul class="list-disc list-inside text-gray-800 mx-10">
+                <li>Innovative Finance</li>
+                <li>Implementation Fidelity and Quality</li>
+                <li>Grounded Climate Response</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md relative">
+            <div
+              class="flex justify-between items-center cursor-pointer"
+              onclick="toggleDropdown('coilitions')"
+            >
+              <span>
+                <span class="">05.</span>
+                <span class="text-[#7E3F98] mx-4 lg:text-xl"
+                  >Coalition Launches and Partnerships</span
+                >
+              </span>
+              <span
+                class="transition-transform transform rotate-0"
+                id="icon-coilitions"
+                ><i class="fa-solid fa-chevron-down text-[#7E3F98]"></i
+              ></span>
+            </div>
+            <div
+              class="hidden absolute left-0 w-full bg-[#F5D47B] p-3 rounded-none shadow-lg mt-2 z-10"
+              id="coilitions"
+            >
+              <ul class="list-disc list-inside text-gray-800 mx-10">
+                <li>Social Protection Coalition</li>
+                <li>Weather and Disease Tracker Prototype</li>
+                <li>India Health Collaborative</li>
+                <li>Social Procurement Coalition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md">
+            <span class="">06.</span>
+            <span class="text-[#7E3F98] mx-4 lg:text-xl"
+              >Key Insights and Takeaways</span
+            >
+          </div>
+
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md">
+            <span class="">07.</span>
+            <span class="text-[#7E3F98] mx-4 lg:text-xl"
+              >Future Directions and Call to Action</span
+            >
+          </div>
+          <div class="bg-[#F5D47B] p-4 rounded-none shadow-md">
+            <span class="">08.</span>
+            <span class="text-[#7E3F98] mx-4 lg:text-xl">Acknowledgments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Explore Chapters End -->
+
+    <!-- Executive Summary Start -->
+    <div class="bg-[#7F4197] text-white relative">
+      <!-- Background "30 Years" -->
+      <div class="absolute top-20 left-1/3 font-bold select-none">
+        <img
+          src="/assets/images/home/executive-icons/30-years-light.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="px-6 py-16 relative">
+        <div class="grid md:grid-cols-2 items-center container mx-auto">
+          <div class="relative lg:mx-32 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold uppercase opacity-75">
+              Executive
+            </h1>
+            <h1 class="text-4xl md:text-5xl font-bold uppercase opacity-75">
+              Summary
+            </h1>
+            <div class="absolute top-0 left-0 w-20 h-1 mt-10"></div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="mt-5">
+            <p class="text-lg">
+              <span class="text-[#F5D47B] font-semibold"
+                >Catalysing Social Impact 2024</span
+              >
+              Catalysing Social Impact 2024 brought together visionaries,
+              stakeholders, and change-makers to power discourse and shape
+              strategies for inclusive and sustainable development in India.
+            </p>
+            <p class="mt-4 text-lg">
+              <span class="font-bold"
+                >The event focused on three key themes:</span
+              >
+              Innovative Finance, Implementation Fidelity and Quality, and
+              Grounded Climate Response.
+            </p>
+            <p class="mt-2"></p>
+            <p class="mt-4 text-lg">
+              One of the central narratives at the event revolved around the
+              pivotal role of collaboration in driving impactful outcomes, be it
+              in scaling initiatives, building resilience, or fostering social
+              procurement practices. The discussions highlighted the
+              significance of partnerships that transcend boundaries,
+              encompassing government entities, corporates, NGOs, and community
+              stakeholders to create meaningful change. The narrative emphasised
+              the power of shared values, shared goals, and shared
+              accountability in driving sustainable impact.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-6 text-[#F5D47B] text-lg hover:underline"
+            >
+              KNOW MORE <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Corner Icons -->
+        <div class="absolute top-0 left-0">
+          <img
+            src="/assets/images/home/executive-icons/left-top.svg"
+            alt="Icon 1"
+            class="w-28"
+          />
+        </div>
+        <div class="absolute top-0 right-0">
+          <img
+            src="/assets/images/home/executive-icons/right-top.svg"
+            alt="Icon 2"
+            class="w-28"
+          />
+        </div>
+        <div class="absolute bottom-0 left-0">
+          <img
+            src="/assets/images/home/executive-icons/left-bottom.svg"
+            alt="Icon 3"
+            class="w-28"
+          />
+        </div>
+        <div class="absolute bottom-0 right-0">
+          <img
+            src="/assets/images/home/executive-icons/right-bottom.svg"
+            alt="Icon 4"
+            class="w-28"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Executive Summary End -->
+
+    <!-- About CSI Start-->
+    <div
+      class="bg-[url('/assets/images/home/bg-explore.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="container mx-auto p-6">
+        <h2 class="uppercase text-5xl font-bold text-center py-10">
+          ABOUT <span class="text-[#7E3F98]">CSI 2024</span>
+        </h2>
+        <p class="text-lg text-center">
+          The CSI event took place at the prestigious
+          <span class="text-[#7E3F98]"
+            >Dr. Ambedkar International Centre in New Delhi.</span
+          >
+          This venue is a tribute to Dr. B.R. Ambedkar, a multifaceted visionary
+          who was not only a social reformer and brilliant economist but also a
+          lifelong learner, advocate for women’s rights, and the chief architect
+          of India’s constitution.
+        </p>
+        <div class="lg:flex justify-center items-center mt-10 gap-10">
+          <div class="lg:w-[50%] text-lg">
+            <p>
+              The centre’s atmosphere resonates with a sense of positive
+              influence, profound wisdom, and thoughtful insight. It stands as a
+              symbol of the principles Dr. Ambedkar championed: equality,
+              empowerment, and justice. Given its significance and the values it
+              represents, the Dr. Ambedkar International Centre proved to be an
+              ideal location for an event focused on fostering connections,
+              finding solutions, and inspiring change.
+            </p>
+          </div>
+          <div class="lg:w-[50%]">
+            <img src="/assets/images/home/dummy.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Confluence section -->
+      <div class="py-16">
+        <div class="flex justify-center">
+          <img
+            src="/assets/images/home/confluence-img.png"
+            class="w-96 py-10"
+            alt=""
+          />
+        </div>
+        <p class="lg:w-[70%] lg:p-0 p-3 mx-auto text-center text-lg">
+          Catalysing Social Impact (CSI) is a confluence of minds—of
+          <span class="text-[#7F4197]"
+            >visionaries, social innovators, donors, grassroot change agents,
+            and communities</span
+          >—to power the discourse and shape strategies for inclusive and
+          sustainable development; underpinning the changing sectoral context,
+          new opportunities, and evolving thought.
+        </p>
+        <p class="lg:w-[70%] lg:p-0 p-3 mx-auto text-center text-lg lg:py-10">
+          Catalysing Social Impact (CSI) is a confluence of minds—of
+          visionaries, social innovators, donors, grassroot change agents, and
+          communities. The second edition in 2004, a two-day event was a
+          platform to celebrate India&#39;s achievement, while sparking
+          meaningful cross-sectoral opportunities for
+          <span class="text-[#7F4197]"
+            >(a) collaborating problem solving, (b) knowledge sharing and
+            learning, (c) impactful partnerships and (d) resource mobilisation </span
+          >.
+        </p>
+        <p class="text-xl text-center lg:p-0 p-2">
+          The event was curated around three themes:
+        </p>
+        <div
+          class="lg:grid grid-cols-3 container justify-center items-center mx-auto mt-10 text-white"
+        >
+          <div class="theme-item bg-[#9152AA] flex items-center p-5 gap-5">
+            <img src="/assets/images/home/confluence-icon-01.svg" alt="" />
+            <p>Innovative Financing</p>
+          </div>
+          <div class="theme-item bg-[#7F4197] flex items-center p-5 gap-5">
+            <img src="/assets/images/home/confluence-icon-02.svg" alt="" />
+            <p>Implementation Fidelity and Quality</p>
+          </div>
+          <div class="theme-item bg-[#9152AA] flex items-center p-5 gap-5">
+            <img src="/assets/images/home/confluence-icon-03.svg" alt="" />
+            <p>Grounded Climate Response</p>
+          </div>
+        </div>
+      </div>
+      <!-- Confluence END -->
+
+      <div class="pb-16 lg:pt-10 flex justify-center">
+        <img
+          src="/assets/images/home/30-years-catalyst.png"
+          class="w-48"
+          alt="30 Years Catalyst"
+        />
+      </div>
+    </div>
+    <!-- About CSI END -->
+
+    <!-- HighLights Section Start -->
+    <div class="text-center">
+      <h2 class="text-[#7E3F98] lg:text-5xl text-2xl font-bold pt-10">HIGHLIGHTS</h2>
+      <p class="text-xl lg:py-10 py-5">
+        This event report captures all the highlights, sights and insights over
+        the two days.
+      </p>
+    </div>
+    <div
+      class="lg:grid grid-cols-4 container justify-center items-center mx-auto"
+    >
+      <div
+        class="theme-item bg-[#F5D47B] flex items-center justify-center p-14 gap-5"
+      >
+        <p class="text-[#7E3F98] text-7xl font-light">2</p>
+        <p class="text-xl">Days</p>
+      </div>
+      <div
+        class="theme-item bg-[#FDE297] flex items-center justify-center p-14 gap-5"
+      >
+        <p class="text-[#7E3F98] text-7xl font-light">3</p>
+        <p class="text-xl">Themes</p>
+      </div>
+      <div
+        class="theme-item bg-[#F5D47B] flex items-center justify-center p-14 gap-5"
+      >
+        <p class="text-[#7E3F98] text-7xl font-light">23</p>
+        <p class="text-xl">Learning Sessions</p>
+      </div>
+      <div
+        class="theme-item bg-[#FDE297] flex items-center justify-center p-14 gap-5"
+      >
+        <p class="text-[#7E3F98] text-7xl font-light">737</p>
+        <p class="text-xl">Participants</p>
+      </div>
+    </div>
+    <div class="lg:grid grid-cols-2 container mx-auto text-white">
+      <div
+        class="theme-item bg-[#7F4197] text-center lg:grid grid-cols-3 items-center justify-center p-10"
+      >
+        <p class="text-7xl font-light">20</p>
+        <p class="text-xl lg:pt-0 pt-5 lg:border-r">Complementary Spotlights</p>
+
+        <ul class="pt-5 text-left px-4">
+          <li>4 Key Note Speeches</li>
+          <li>2 Performances</li>
+          <li>3 Awards</li>
+          <li>3 Launches</li>
+          <li>6 Exhibits</li>
+          <li>2 Podcasts</li>
+        </ul>
+      </div>
+      <div
+        class="theme-item bg-[#9F5FB9] lg:flex items-center justify-center gap-5 p-10"
+      >
+        <p class="text-4xl font-semibold">UNLIMITED</p>
+        <p class="text-xl py-4">Creativity, Innovation, Insights, Networking</p>
+      </div>
+    </div>
+
+    <!-- HighLights Section End -->
+
+    <!-- Themes Start -->
+    <div class="bg-[#222222] text-white">
+      <div class="container mx-auto py-12">
+        <h2 class="text-4xl font-bold text-center mb-8">THEMES</h2>
+
+        <!-- Tabs -->
+        <div class="lg:flex justify-center space-x-4 relative">
+          <button
+            class="relative bg-white text-[#7E3F98] border px-6 py-2 shadow-md font-semibold focus:outline-none theme-tab active"
+            onclick="changeTab(event, 'finance')"
+          >
+            Innovative Finance
+            <div
+              class="triangle absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rotate-45"
+            ></div>
+          </button>
+          <button
+            class="relative bg-transparent border text-white px-6 py-2 shadow-md font-semibold focus:outline-none theme-tab"
+            onclick="changeTab(event, 'quality')"
+          >
+            Implementation Fidelity and Quality
+            <div
+              class="triangle hidden absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rotate-45"
+            ></div>
+          </button>
+          <button
+            class="relative bg-transparent border text-white px-6 py-2 shadow-md font-semibold focus:outline-none theme-tab"
+            onclick="changeTab(event, 'climate')"
+          >
+            Grounded Climate Response
+            <div
+              class="triangle hidden absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rotate-45"
+            ></div>
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div
+          id="finance"
+          class="theme-content bg-[#995DB1] flex flex-col md:flex-row mt-10 justify-center items-center"
+        >
+          <img
+            src="/assets/images/home/innovative-finance.png"
+            alt="Finance Theme"
+            class="w-full md:w-1/2 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-3xl font-bold text-[#F5D47B]">
+              Innovative Financing
+            </h3>
+            <p class="mt-4 text-white">
+              The funding landscape for social development is changing and
+              evolving in the backdrop of India’s economic growth. Traditional
+              funding mechanisms are down to a trickle, while new ones are still
+              finding their feet. Navigating the funding desert in social impact
+              feels like chasing mirages. With the SDGs requiring trillions, we
+              rallied sectoral stakeholders to revolutionise financing for a
+              brighter future.
+            </p>
+
+            <p class="mt-4 text-white">
+              The innovative financing theme explored new avenues to unlock
+              essential funds for meaningful change, such as social stock
+              exchanges, new micro-finance paradigms, and carbon credit
+              utilisation.
+            </p>
+
+            <a href="#" class="text-[#F5D47B] font-bold mt-4 inline-block"
+              >KNOW MORE <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div
+          id="quality"
+          class="theme-content hidden bg-[#995DB1] p-6 flex flex-col md:flex-row mt-10"
+        >
+          <img
+            src="your-image.jpg"
+            alt="Quality Theme"
+            class="w-full md:w-1/2 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[#F5D47B]">
+              Implementation Fidelity and Quality
+            </h3>
+            <p class="mt-4 text-white">
+              Navigating the gap between envisioned outcomes and reality is a
+              common challenge in social impact. While research emphasises
+              implementation fidelity, its practicality in addressing real-world
+              problems requires further examination, especially regarding the
+              balance between scale and quality.
+            </p>
+            <p class="mt-4 text-white">
+              The theme navigated the spaces of quality care’s impact on
+              maternal and neonatal mortality, health outcome measurement,
+              design adaptation, technology’s role, and data-driven decisions.
+            </p>
+            <a href="#" class="text-[#F5D47B] font-bold mt-4 inline-block"
+              >KNOW MORE <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div
+          id="climate"
+          class="theme-content hidden bg-[#995DB1] p-6 flex flex-col md:flex-row mt-10"
+        >
+          <img
+            src="your-image.jpg"
+            alt="Climate Theme"
+            class="w-full md:w-1/2 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[#F5D47B]">
+              Grounded Climate Response
+            </h3>
+            <p class="mt-4 text-white">
+              Addressing climate challenges with innovative solutions that
+              integrate sustainability and resilience into social programs.
+            </p>
+            <a href="#" class="text-[#F5D47B] font-bold mt-4 inline-block"
+              >KNOW MORE <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Themes Section End -->
+
+    <!-- Expressions Start -->
+    <div
+      class="text-center bg-white relative flex flex-col justify-center items-center"
+    >
+      <div
+        class="absolute top-0 left-0 w-28 lg:w-40 h-20 bg-cover"
+        style="
+          background-image: url('/assets/images/home/left-icon-30-years.png');
+        "
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-28 lg:w-40 h-20 bg-cover"
+        style="
+          background-image: url('/assets/images/home/right-icon-30-years.png');
+        "
+      ></div>
+
+      <div class="flex justify-center items-center"></div>
+      <h2 class="text-[#7F4197] text-2xl lg:text-5xl font-semibold mt-20">
+        EXPRESSIONS
+      </h2>
+
+      <p class="lg:mt-5 mt-2 lg:p-0 p-2 lg:w-[60%] leading-relaxed lg:text-lg">
+        As we embark on sharing the proceedings of the CSI event, let us first
+        look at the array of expressions that unfolded during our journey of
+        connection, problem-solving, and catalysing change.
+      </p>
+      <div>
+       
+        <div class="grid grid-cols-3 grid-rows-3 gap-4 container mx-auto mt-20">
+          <!-- Image 1 -->
+          <div class="group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-1.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="text-[#fff] px-5">Keynote Speeches</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-2 text-xl"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 2 -->
+          <div class="col-span-2 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-2.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">Coalition Launches</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 3 -->
+          <div class="row-start-2 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-3.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-3 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">Human Library</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 4 -->
+          <div class="row-start-2 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-4.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">Stories of Women</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 5 -->
+          <div class="row-start-2 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-5.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-3 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">The Film Showcase</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 6 -->
+          <div class="col-span-2 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-6.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">Exhibitions</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+  
+          <!-- Image 7 -->
+          <div class="col-start-3 row-start-3 group overflow-hidden relative">
+              <img src="/assets/images/home/expressions/img-7.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 bottom-16 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                  <span class="px-5">Dance Performances</span>
+                  <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container mx-auto justify-center items-center flex w-1/2 py-16 group overflow-hidden relative mb-16">
+          <img src="/assets/images/home/expressions/img-8.png" alt="" class="w-full transform transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute bottom-0 left-0 w-0 bg-[#7E3F98] text-white flex justify-between items-center opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+              <span class="px-5">Dance Performances</span>
+              <div class="bg-[#F5D47B] text-black px-2 py-1 font-bold"><i class="fas fa-arrow-right p-3"></i></div>
+          </div>
+      </div>
+  
+      </div>
+    </div>
+
+    <!-- Expressions End -->
+
+
+    <!-- Quick Link Start -->
+     <div class="bg-[#222222]">
+    <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
+      <h2 class="text-white text-lg font-semibold tracking-wide mb-6">QUICK LINKS</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Executive Summary</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Keynote Speeches</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>CSI Awards</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Performances and Cultural Expressions</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Wicked Solutions</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Human Library and Storytelling</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Film Showcase</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Exhibitions and Photography</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Coalition Launches & Partnerships</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <br>
+          <p class="text-white text-sm flex items-center">Event Themes:</p>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Innovative Finance</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Implementation Fidelity and Quality</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+          <a href="#" class="px-4 py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400">
+              <span>Grounded Climate Response</span>
+              <span class="text-yellow-400">↗</span>
+          </a>
+      </div>
+  </div>
+</div>
+  <!-- Quick Links End -->
+    <script>
+      // for mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+      // for dropdown
+      function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.classList.remove("rotate-180");
+        }
+      }
+      // for tab Themes
+      function changeTab(event, tabName) {
+        document.querySelectorAll(".theme-content").forEach((content) => {
+          content.classList.add("hidden");
+        });
+
+        document.querySelectorAll(".theme-tab").forEach((tab) => {
+          tab.classList.remove("bg-white", "text-[#7E3F98]");
+          tab.classList.add("bg-transparent", "text-white");
+          tab.querySelector("div")?.classList.add("hidden");
+        });
+
+        event.currentTarget.classList.add("bg-white", "text-[#7E3F98]");
+        event.currentTarget.classList.remove("bg-transparent", "text-white");
+        event.currentTarget.querySelector("div")?.classList.remove("hidden");
+
+        document.getElementById(tabName).classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>

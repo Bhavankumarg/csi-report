@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI 2024 Report Header</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- HEader starts here -->
+    <nav class="bg-white shadow-md py-4 px-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="/">
+            <img
+              src="/assets/images/csi-logo.png"
+              alt="csi-logo"
+              class="w-48 h-auto"
+          /></a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-black font-medium">Executive Summary</a>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Highlights
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8]"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="/human-library-and-story-telling.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Themes
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+        <button class="md:hidden text-black text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+      <!-- Mobile Menu inside the container -->
+      <div class="container mx-auto">
+        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
+          <a href="#" class="text-black font-medium py-2">Executive Summary</a>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown1')"
+            >
+              Event Highlights <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown2')"
+            >
+              Event Themes <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium py-2"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Header Ends here -->
+    <!-- Banner Carousel -->
+    <div class="relative w-full mx-auto overflow-hidden">
+      <!-- Carousel Wrapper -->
+      <div
+        class="flex transition-transform duration-500 ease-in-out"
+        id="carousel"
+      >
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            src="/assets/images/coalitions/banner-slider-01.png"
+            alt="Keynote Speech"
+            class="w-full object-cover"
+          />
+          <div class="absolute bottom-10 w-full p-5">
+            <h2 class="text-white text-2xl font-semibold text-center">
+              Keynote Speeches
+            </h2>
+          </div>
+        </div>
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            src="/assets/images/key-speeches/banner-carousel-01.png"
+            alt="Panel Discussion"
+            class="w-full object-cover"
+          />
+          <div class="absolute bottom-10 w-full p-5">
+            <h2 class="text-white text-2xl font-semibold text-center">
+              Panel Discussions
+            </h2>
+          </div>
+        </div>
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            src="/assets/images/key-speeches/banner-carousel-01.png"
+            alt="Audience"
+            class="w-full object-cover"
+          />
+          <div class="absolute bottom-10 w-full p-5">
+            <h2 class="text-white text-2xl font-semibold text-center">
+              Engaging Audience
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Arrow -->
+      <button
+        id="prev"
+        class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-[#7E3F98] text-white p-3 w-12 h-12 rounded-full opacity-75 hover:opacity-100 transition"
+      >
+        &#10094;
+      </button>
+
+      <!-- Right Arrow -->
+      <button
+        id="next"
+        class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-[#7E3F98] text-white p-3 w-12 h-12 rounded-full opacity-75 hover:opacity-100 transition"
+      >
+        &#10095;
+      </button>
+
+      <!-- Dots -->
+      <div
+        class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2"
+      >
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
+          data-index="0"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
+          data-index="1"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
+          data-index="2"
+        ></span>
+      </div>
+    </div>
+    <!-- Banner Carousel End -->
+    <!-- Speakers Start -->
+    <div
+      class="relative flex flex-col justify-center items-center bg-[url('/assets/images/home/bg-explore.png')] bg-no-repeat bg-cover bg-center lg:p-32 p-10"
+    >
+      <div
+        class="absolute top-0 left-0 w-28 lg:w-44 h-40 bg-cover"
+        style="background-image: url('/assets/images/echos/left-icon.svg')"
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-28 lg:w-48 h-40 bg-cover"
+        style="background-image: url('/assets/images/echos/right-icon.svg')"
+      ></div>
+      <div class="max-w-6xl mx-auto container flex flex-col items-center">
+        <h2 class="text-center text-gray-700 text-xl mb-6 lg:w-[80%]">
+          Riding on our “connect” theme, the CSI provided a platform for the
+          launch and build up of coalitions. It also showcased the Catalyst
+          Group’s deep experience and engagement as a collaborative
+          orchestrator.
+        </h2>
+      </div>
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/coalitions/img-1.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6 text-center">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Social Protection Coalition Launch
+          </h2>
+          <p class="text-gray-700 mt-5">
+            The launch of the Social Protection Coalition marked a pivotal step
+            towards enhancing resilience and fostering social inclusion for
+            vulnerable communities in India. The coalition aims to bring
+            together a diverse network of civil society organisations,
+            foundations, the private sector, academia, government, and other key
+            stakeholders —all united in their commitment to strengthening
+            comprehensive social protection systems.
+          </p>
+          <p class="text-gray-700 mt-4">
+            117 organisations including CSOs, Foundations, Private sector
+            stakeholders, Associations, Multilaterals, government officials as
+            well as community champions attended the launch and expressed their
+            commitment to expanding social protection access and improve
+            coverage for various marginalised groups & strengthen social
+            protection mechanisms for a more inclusive and resilient society.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/coalitions/img-2.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6 text-center">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Precision Action for Climate and Health: Launch of a Weather and
+            Disease Tracker
+          </h2>
+          <p class="text-gray-700 mt-5">
+            A significant highlight at CSI was the signing of a letter of
+            agreement between the India Meteorological Department (IMD) and
+            Swasti, The Health Catalyst, a non-profit entity under The Catalyst
+            Group. The collaborative partnership establishes correlations
+            between extreme weather events and health and disease outcomes on
+            the ground for various vulnerable communities. Senior officials from
+            both organisations also launched a Weather and Disease Tracker
+            Prototype at the Catalysing Social Impact 2024.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/coalitions/img-3.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6 text-center">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Launch of the India Health Collaborative
+          </h2>
+          <p class="text-gray-700 mt-5">
+            The India Health Collaborative (IHC) was launched under the aegis of
+            the Catalyst 2030 network, which focuses on making healthcare
+            accessible, affordable and of quality for vulnerable people on a
+            large scale; and the launch of the Meaningful Business MB 100 India
+            chapter, which aims to identify and champion business leaders
+            driving companies and initiatives aligned to the UN Sustainable
+            Development Goals.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/coalitions/img-4.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6 text-center">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Social Procurement Coalition
+          </h2>
+          <p class="text-gray-700 mt-5">
+            The vibrant session on “<b>Procure with Purpose</b>: <span class="text-[#7F4197]">Building a Coalition
+            for Social Procurement in India </span>” brought together a diverse group of
+            32 participants, both offline and online.
+          </p>
+          <p class="text-gray-700 mt-5">
+            The session delved into the essential objectives of the Social
+            Procurement Coalition, focusing on tangible outcomes and actions.
+            The coalition’s key highlights revolved around sharing insights from
+            Sattva’s Social Procurement report, highlighting the challenges
+            faced by corporates in sourcing from indigenous communities and the
+            imperative for market building and process standardisation. The
+            group work emphasised resource provision, enhanced corporate
+            connections, and sustainable funding models to drive coalition
+            sustainability and impact.
+          </p>
+          <p class="text-gray-700 mt-5">
+            Dynamically transitioning through Q&A sessions and breakouts, the
+            participants grappled with essential questions on legal
+            formalisation, funding dynamics, and coalition viability. The
+            emphasis on clear objectives, stakeholder engagement, and data
+            standardisation underscored the coalition’s commitment to fostering
+            impactful social procurement practices in India.
+          </p>
+          <p class="text-gray-700 mt-5">
+            As the session concluded, exciting implementations loomed on the
+            horizon, with focused actions on market building, member engagement,
+            and data infrastructure enhancements setting the tone for a
+            collaborative and impactful journey ahead. The session left an
+            indelible mark, illuminating the transformative potential of
+            collective action in driving social procurement agendas in India.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // for mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+
+      //   for carousel
+      const carousel = document.getElementById("carousel");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const dots = document.querySelectorAll(".dot");
+      let index = 0;
+
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot) =>
+          dot.classList.remove("bg-purple-600", "opacity-100")
+        );
+        dots[index].classList.add("bg-purple-600", "opacity-100");
+      }
+
+      next.addEventListener("click", () => {
+        index = (index + 1) % 3;
+        updateCarousel();
+      });
+
+      prev.addEventListener("click", () => {
+        index = (index - 1 + 3) % 3;
+        updateCarousel();
+      });
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          index = parseInt(dot.dataset.index);
+          updateCarousel();
+        });
+      });
+
+      updateCarousel();
+    </script>
+  </body>
+</html>

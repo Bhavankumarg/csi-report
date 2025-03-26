@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI 2024 Report Header</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- HEader starts here -->
+    <nav class="bg-white shadow-md py-4 px-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="/">
+            <img
+              src="/assets/images/csi-logo.png"
+              alt="csi-logo"
+              class="w-48 h-auto"
+          /></a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-black font-medium">Executive Summary</a>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Highlights
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8]"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="/human-library-and-story-telling.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Themes
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+        <button class="md:hidden text-black text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+      <!-- Mobile Menu inside the container -->
+      <div class="container mx-auto">
+        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
+          <a href="#" class="text-black font-medium py-2">Executive Summary</a>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown1')"
+            >
+              Event Highlights <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown2')"
+            >
+              Event Themes <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium py-2"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Header Ends here -->
+    <!-- Banner Start -->
+    <div class="relative w-full mx-auto overflow-hidden">
+      <div
+        class="flex transition-transform duration-500 ease-in-out"
+        id="carousel"
+      >
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            src="/assets/images/wicked-solutions/banner.png"
+            alt="CSI awards"
+            class="w-full object-cover"
+          />
+          <div class="absolute bottom-3 w-full p-5">
+            <h2 class="text-white text-4xl text-center">Wicked Solutions</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Speakers Start -->
+    <div
+      class="relative flex flex-col justify-center items-center bg-[url('/assets/images/home/bg-explore.png')] bg-no-repeat bg-cover bg-center lg:p-32 p-10"
+    >
+      <div
+        class="absolute top-0 left-0 w-28 lg:w-44 h-40 bg-cover"
+        style="background-image: url('/assets/images/echos/left-icon.svg')"
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-28 lg:w-48 h-40 bg-cover"
+        style="background-image: url('/assets/images/echos/right-icon.svg')"
+      ></div>
+      <div class="max-w-6xl mx-auto container flex flex-col items-center">
+        <h2 class="text-center text-gray-700 text-xl mb-6 lg:w-[80%]">
+          The Wicked Solutions Show’ is a podcast hosted by Shiv Kumar —
+          Co-founder of The Catalyst Group and Chief Integrator of the
+          COVIDActionCollab.
+        </h2>
+        <h2 class="text-center text-gray-700 text-xl mb-6 lg:w-[80%]">
+          The show brings to light the ‘wicked problems’ faced by the social
+          development sector and the challenges they overcome to solve it!
+          Wicked problems are indeed difficult to solve: they’re complex,
+          incomplete, and contradictory. Times like this call for solutions that
+          are cooperative, creative and adaptable.
+        </h2>
+      </div>
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/wicked-solutions/img-1.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Uniting Media and CSO for Impact
+          </h2>
+          <p class="text-gray-700 mt-5">
+            The Wicked Solutions Show featured a dynamic panel discussion
+            focused on the critical role of storytelling in the social sector,
+            <span class="text-[#7F4197]">
+              facilitated by Shiv Kumar. The session brought together speakers
+              Ankur Paliwal, Queerbeat; Ashna Ashesh, Helm of Eight; Rajiv
+              Tikko, Senior Journalist, Editor and Consultant Development
+              Communication; and Sudhir Sahani, Pradhan.</span
+            >
+            Speakers shared insights on how effective storytelling can
+            significantly impact civil society organisations (CSOs) and their
+            efforts to engage stakeholders.
+          </p>
+          <p class="text-gray-700 mt-4">
+            The panelists emphasised that simply completing projects is
+            insufficient; it is vital for organisations to showcase their
+            accomplishments and articulate the processes behind them. Sudhir
+            noted that effective storytelling attracts significant stakeholders,
+            while Rajiv pointed out the importance of communicating clear
+            messages, as people often remember experiences more than mere facts.
+            This sentiment was echoed by Ankur, who highlighted how narratives
+            can empower individuals by helping them process their experiences
+            and foster a sense of agency.
+          </p>
+          <p class="text-gray-700 mt-4">
+            As the conversation shifted towards the evolving media landscape,
+            Ankur discussed the rise of media outlets led by marginalised
+            communities, which are essential for addressing the
+            misrepresentation often found in mainstream media. While this shift
+            presents opportunities for greater representation, it also
+            introduces challenges, particularly regarding media fragmentation
+            and audience trust in credible sources. Ashna raised concerns about
+            whether new media encourages critical thinking or merely amplifies
+            fear, while Sudhir pointed to the difficulties of capturing diverse
+            audiences with tailored content, especially given the shortened
+            attention spans of younger generations.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="relative max-w-4xl bg-white shadow-lg p-20 mt-52">
+        <!-- Top Right Decorative Icon -->
+        <div class="absolute top-0 right-0 flex justify-center items-center">
+          <img class="w-24" src="/assets/images/echos/right-icon.svg" alt="" />
+        </div>
+
+        <!-- Image Section with Overlay -->
+        <div class="relative">
+          <img
+            src="/assets/images/wicked-solutions/img-2.png"
+            alt="Panel Discussion"
+            class="w-full h-auto -mt-52"
+          />
+        </div>
+
+        <!-- Content Section -->
+        <div class="mt-6">
+          <h2 class="text-center text-3xl text-[#7F4197]">
+            Empowering Futures: Private Philanthropy’s impact on Indian
+            Education
+          </h2>
+          <p class="text-gray-700 mt-5">
+            In a separate session, Pamela Shrivastava, Head of Sustainability
+            and APV at Shiv Nadar Foundation gave insights into the initiatives
+            of the Foundation, emphasising the distinction between Corporate
+            Social Responsibility (CSR) and philanthropy. She articulated the
+            foundation’s commitment to education, driven by a passion for
+            nurturing future leaders, particularly in rural areas. Pamela
+            explained that education is a transformative tool for change,
+            especially for girls in regions facing significant challenges.
+          </p>
+          <p class="text-gray-700 mt-4">
+            She shared the foundation’s response to setbacks caused by the
+            COVID-19 pandemic, including the establishment of low-fee boarding
+            schools focused on girls’ education. Despite initial obstacles, such
+            as limited access to technology, the foundation adapted by creating
+            an accessible curriculum and utilising platforms like YouTube for
+            instructional videos. Pamela also highlighted the importance of
+            promoting natural farming among children, connecting them to their
+            roots and addressing initial skepticism from parents.
+          </p>
+        </div>
+
+        <!-- Bottom Left Decorative Icon -->
+        <div class="absolute bottom-0 left-0 flex justify-center items-center">
+          <img
+            class="w-28"
+            src="/assets/images/wicked-solutions/bottom-left.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // for mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

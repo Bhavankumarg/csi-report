@@ -1,0 +1,94 @@
+/* @import url("https://use.typekit.net/vqy3vry.css"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/montserrat.ttf");
+}
+
+/*   font-family: "Lato", sans-serif;
+ */
+:root {
+  /* --first-font: "montserrat", sans-serif; */
+  --first-font: "Lato", sans-serif !important;
+  --theme-color: #7e3f98;
+  --second-color: #e5ecf4;
+  --third-color: #ffeaf1;
+  --grey-color: #0000001a;
+  --border-color: #666666;
+  --light-pink: #ffeaf1;
+  --blue: #00ad8d;
+  --black: #212529;
+  --white: #ffffff;
+  --h1: normal 500 51px/1 var(--first-font);
+  --h2: normal 500 40px/1.2 var(--first-font);
+  --h3: normal 500 32px/1 var(--first-font);
+  --h4: normal 500 22px/1 var(--first-font);
+  --h5: normal 500 20px/1 var(--first-font);
+  --h6: normal 500 18px/1 var(--first-font);
+  --common-text: normal 400 16px/1.4 var(--first-font) !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  color: var(--black);
+  font-family: var(--first-font) !important;
+  background-color: #7e3f9830;
+}
+
+/* Header CSS Start */
+.dropdown-menu {
+  display: none !important;
+  position: absolute !important;
+  /* background-color: #E6D4E8 !important; */
+  min-width: 200px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  z-index: 10 !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+.dropdown-item {
+  padding: 10px 15px !important;
+  color: black !important;
+  font-weight: 500 !important;
+  display: block !important;
+}
+.dropdown-item:hover {
+  color: #fff !important;
+}
+/* Header CSS End */
+
+ul li::marker {
+  color: #7e3f98; /* Bullet color */
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px #7f4197; /* Purple outline */
+  color: transparent;
+}
+
+/* hover effect for speakers on KEYSPEECHES PAGE */
+.group:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.group:hover img {
+  transform: scale(1.05);
+}
+
+

@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI 2024 Report Header</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white">
+    <nav class="bg-white shadow-md py-4 px-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="/">
+            <img
+              src="/assets/images/csi-logo.png"
+              alt="csi-logo"
+              class="w-48 h-auto"
+          /></a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-black font-medium">Executive Summary</a>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Highlights
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8]"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="/human-library-and-story-telling.html"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <button class="text-black font-medium">
+              Event Themes
+              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+            </button>
+            <div
+              class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden"
+            >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+        <button class="md:hidden text-black text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+      <!-- Mobile Menu inside the container -->
+      <div class="container mx-auto">
+        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
+          <a href="#" class="text-black font-medium py-2">Executive Summary</a>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown1')"
+            >
+              Event Highlights <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Keynote Speeches</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >CSI Awards</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Performances and Cultural Expressions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Human Library and Storytelling</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Wicked Solutions</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Film Showcase</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Exhibitions and Photography</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              class="text-black font-medium py-2"
+              onclick="toggleDropdown('mobileDropdown2')"
+            >
+              Event Themes <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Innovative Finance</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Implementation Fidelity and Quality</a
+              >
+              <a
+                href="#"
+                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+                >Grounded Climate Response</a
+              >
+            </div>
+          </div>
+          <a href="#" class="text-black font-medium py-2"
+            >Coalition Launches & Partnerships</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Hedaer Ends here -->
+    <!-- Banner Start -->
+    <div class="relative">
+     
+      <img
+        src="/assets/images/implementation/banner-imp.png"
+        alt="implementatio banner"
+        class="w-full"
+      />
+
+      <!-- Text Overlay in Container -->
+      <div class="lg:absolute bottom-0 w-full flex justify-center">
+        <div
+          class="bg-[#7E3F98] text-white text-center py-6 px-4 lg:max-w-5xl w-full"
+        >
+          <h2 class="text-4xl font-semibold text-[#F5D47B] py-5">
+            Implementation Fidelity and Quality
+          </h2>
+          <p class="text-xl mt-2 max-w-3xl mx-auto pb-3">
+            The theme of implementation and quality and fidelity in the CSI
+            sessions focused on connecting, solving, and catalysing social
+            impact initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Sticky Tabs -->
+    <div class="sticky top-0 bg-[#EDE2F4] shadow-md absolute z-10">
+      <div id="tabs" class="flex overflow-x-auto items-center">
+        <a
+          href="#overview"
+          class="tab-link px-6 py-[44px] text-black hover:bg-[#7E3F98] hover:text-white"
+          >Overview</a
+        >
+        <a
+          href="#scaling"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Scaling with the Government</a
+        >
+        <a
+          href="#mainstreaming"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Mainstreaming Capacity Building</a
+        >
+        <a
+          href="#making-collaborations"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Making collaborations and partnerships work</a
+        >
+        <a
+          href="#data"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Data for Decisions and Stories</a
+        >
+        <a
+          href="#tech"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Tech for all and no code</a
+        >
+        <a
+          href="#reimagining"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Reimagining implementation at scale</a
+        >
+        <a
+          href="#collaborating"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Collaborating between Development Sector and Government</a
+        >
+        <a
+          href="#digital"
+          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
+          >Digital Public Infrastructure for MSMEs</a
+        >
+      </div>
+    </div>
+    <!-- Content Sections -->
+    <div class="relative" id="overview">
+      <div
+        class="max-w-6xl mx-auto container flex flex-col items-center pt-20 pb-10"
+      >
+        <h2 class="text-center text-gray-700 text-2xl mb-6 lg:w-[90%]">
+          Throughout the sessions, common threads emerged, emphasising the
+          importance of collaboration, innovation, and sustainability in
+          addressing the challenges faced in the social sector.
+        </h2>
+        <h2 class="text-start text-gray-700 text-lg mb-6 lg:w-[90%]">
+          The sessions showed the significance of building long-term
+          relationships with government stakeholders, showcasing the importance
+          of transparency, trust, and alignment with government goals for
+          lasting change. Furthermore, the discussions highlighted the need for
+          patience, effective communication, and a shift towards partnership
+          mindset as key factors for successful scaling with the government.
+        </h2>
+        <p class="text-start text-gray-700 text-lg mb-6 lg:w-[90%]">
+          In terms of mainstreaming capacity building, the discussions revolved
+          around finding a balance between expected outcomes and real
+          challenges, such as addressing community needs and being innovative in
+          approaches. The role of frontline workers as critical contributors to
+          impactful outcomes at scale was also underscored, along with the need
+          for customizable and scalable solutions supported by partnerships and
+          data-driven decision-making.
+        </p>
+      </div>
+      <!-- Slider Start -->
+      <div class="bg-white items-center justify-center container mx-auto">
+        <div class="relative w-full overflow-hidden">
+          <div id="carouselWrapper" class="w-full overflow-hidden">
+            <div
+              id="carousel"
+              class="flex transition-transform duration-500 space-x-4"
+            >
+              <img
+                src="/assets/images/implementation/slider/img-slider-01.png"
+                alt="Speaker"
+                class="w-full sm:w-1/3 object-cover"
+              />
+              <img
+                src="/assets/images/implementation/slider/img-slider-02.png"
+                alt="Audience"
+                class="w-full sm:w-1/3 object-cover"
+              />
+              <img
+                src="/assets/images/implementation/slider/img-slider-03.png"
+                alt="Discussion"
+                class="w-full sm:w-1/3 object-cover"
+              />
+              <!-- <img src="/assets/images/innovative-finance/slider/slider-img-04.png" alt="Panel" class="w-full sm:w-1/3 object-cover" /> -->
+              <!-- <img src="/assets/images/innovative-finance/slider/slider-img-05.png" alt="Networking" class="w-full sm:w-1/3 object-cover" /> -->
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="flex justify-center items-center gap-3 lg:py-10 py-5">
+            <button
+              id="prev"
+              class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              id="next"
+              class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Slider End -->
+      <div
+        class="max-w-6xl mx-auto container flex flex-col items-center pt-5 pb-10"
+      >
+        <p class="text-start text-gray-700 text-lg mb-6 lg:w-[90%]">
+          When it came to collaborations and partnerships, the focus was on
+          shared values, clarity of purpose, strong communication, and
+          commitment from all partners. The session highlighted the challenges
+          and opportunities of collaborating with diverse organisations,
+          emphasising the importance of continuous progress, goal alignment, and
+          flexibility in achieving impactful outcomes.
+        </p>
+
+        <p class="text-start text-gray-700 text-lg mb-40 lg:w-[90%]">
+          Regarding data-driven decision-making, the sessions emphasised the
+          creation of clear and concise dashboards to support informed
+          decisions, alongside exploring the potential of AI-driven tools for
+          dynamic interactions with data. The importance of data integrity,
+          streamlined data collection processes, and actionable insights for
+          human-centred decision-making were also stressed. The discussions
+          surrounding leveraging technology, capacity building, and digital
+          infrastructure for Micro, Small, and Medium Enterprises (MSMEs)
+          highlighted the transformative potential of AI and no-code tools in
+          enhancing social impact work. The sessions showcased opportunities
+          presented by digital ecosystems to support local entrepreneurs and
+          drive economic growth.
+        </p>
+      </div>
+
+      <!-- Bottom Left Decorative Icon -->
+      <div class="absolute bottom-0 left-0 flex justify-center items-center">
+        <img
+          class="w-40"
+          src="/assets/images/innovative-finance/bottom-left-icon.svg"
+          alt=""
+        />
+      </div>
+      <!-- Bottom Right Decorative Icon -->
+      <div class="absolute bottom-0 right-0 flex justify-center items-center">
+        <img
+          class="w-40"
+          src="/assets/images/innovative-finance/bottom-right-icon.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <section id="scaling">
+      <div class="lg:flex items-center justify-center bg-[#904DAC] space-x-24">
+        <div class="">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">01.</h3>
+          <p class="text-white text-2xl pt-3 px-20 w-96">
+            Lessons from Scaling with the government
+          </p>
+        </div>
+        <div>
+          <img src="/assets/images/implementation/lesson-banner.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/shama.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Shama Karkal</p>
+            <p class="text-white">Catalyst Foundation</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/speakers/anil.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Anil Swarup</p>
+            <p class="text-white">Former Secretary, Government of India</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: World Cafe
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/nexus.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Engaging effectively with government entities to scale initiatives is
+          a complex endeavour that requires careful consideration of various
+          factors.
+        </p>
+        <p class="pt-4">
+          Key lessons from this session highlight the significance of
+          understanding the nature of scale, which transcends mere numbers to
+          encompass individual choices and geographical contexts. Successful
+          scaling involves identifying and empowering agents of change who can
+          catalyse transformation within governmental frameworks.
+        </p>
+        <p class="pt-4">
+          Building trust and confidence in government systems is crucial,
+          necessitating visual outputs that clearly demonstrate change. The
+          principles of leverage, the importance of culture over policy, and the
+          need for continuous iteration stand out as foundational elements in
+          this process. Additionally, developing a clear exit strategy is vital.
+          Organisations should aim to transition from direct implementation
+          roles to advisory positions, ensuring that changes are
+          institutionalised for sustainability.
+        </p>
+        <p class="pt-4">
+          Engaging with government actors necessitates strategic
+          relationship-building across various levels. Identifying champions
+          within the government can significantly enhance collaboration, while
+          regular communication and transparency are essential for fostering
+          trust. A successful model highlighted was the School Innovation
+          Marathon in Andhra, where early engagement and clear communication of
+          efforts helped solidify partnerships.
+        </p>
+        <p class="pt-4">
+          Documentation plays a key role in maintaining clarity and
+          accountability, preventing misunderstandings that could jeopardise
+          relationships. Organisations should position themselves as co-creators
+          rather than mere implementers, emphasising shared goals and
+          collaborative efforts. Understanding the bureaucratic landscape,
+          including the dynamics between different governmental ministries, is
+          important for effective engagement.
+        </p>
+        <p class="pt-4">
+          A shift in narrative from confrontation to empowerment can help build
+          confidence among government stakeholders. It is crucial to initiate
+          programs at the district level to ensure they are embedded within
+          existing structures. The articulation of a focused problem statement
+          aligned with the relevant department’s interests can facilitate
+          smoother collaboration.
+        </p>
+        <p class="pt-4">
+          Overall, scaling initiatives with the government is a gradual process
+          that requires patience, persistence, and strategic positioning.
+          Recognizing that success may take time is essential, as is the need to
+          maintain high-quality relationships through regular engagement. By
+          aligning organisational visions with government objectives from the
+          outset, stakeholders can foster a collaborative environment conducive
+          to long-term success. Emphasising unique value adds that complement
+          existing government initiatives can further enhance these
+          relationships, paving the way for impactful and sustainable change.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation Section Start -->
+    <section
+      id="mainstreaming"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-20"
+    >
+      <div class="max-w-2xl">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">02.</h3>
+        <p class="text-white text-2xl pt-3 px-20">
+          Navigating the Gap: Mainstreaming Capacity Building
+        </p>
+      </div>
+      <div>
+        <img
+          src="/assets/images/implementation/main-stream-banner.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/faciliator/vandana.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Vandana Nadig Nair</p>
+            <p class="text-white">Phicus & Co-Founder</p>
+          </div>
+        </div>
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/shilpa.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Shilpa Diwakar,</p>
+            <p class="text-white">Phicus Social Solutions</p>
+          </div>
+        </div>
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Interactive session, Group work
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/phicus.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Mainstreaming capacity building (CB) is essential for creating
+          resilient ecosystems that empower communities and organisations. The
+          discussion emphasised that scaling an organisation involves not just
+          increasing the size of its programs but also enhancing the
+          institution’s overall capacity. Sustainable CB is crucial, especially
+          in light of challenges faced during the COVID-19 pandemic, where
+          innovative platforms were developed to support grassroots partners.
+        </p>
+        <p class="pt-4">
+          An AI assistant demonstrated how AI can enhance local capacity
+          building by integrating technological prowess with a people-centric
+          approach, simplifying complex concepts for better comprehension. Yet,
+          it was recognised that while technology can enhance efficiency, there
+          is a caution against over-reliance on advanced tools, which can stifle
+          creativity. Instead, low-tech methods and innovative thinking should
+          be prioritised to ensure that capacity building remains relevant and
+          accessible.
+        </p>
+        <p class="pt-4">
+          Inclusivity emerged as another vital theme, highlighting the
+          importance of addressing power dynamics within communities. This
+          requires questioning existing barriers such as language and design,
+          ensuring that capacity-building efforts are aligned with the specific
+          contexts and needs of the target groups.
+        </p>
+        <p class="pt-4">
+          Funding remains a significant challenge, as capacity building often
+          receives insufficient financial support. Organisations must improve
+          visibility of their CB efforts and conduct thorough needs assessments
+          to better negotiate funding with donors. Additionally, sustainability
+          should be viewed from the recipient’s perspective, focusing on their
+          needs and ensuring that ownership is fostered within communities.
+        </p>
+        <p class="pt-4">
+          In summary, successful capacity building requires a holistic approach
+          that integrates innovative solutions, inclusivity, adequate funding,
+          and sustainability, all while maintaining a human-centred focus. By
+          redefining the CB landscape, organizations can enhance implementation
+          fidelity and ensure quality outcomes in their initiatives.
+        </p>
+      </div>
+    </div>
+    <!-- MainStream Section End -->
+    <!-- Herding cats Start -->
+    <section id="making-collaborations">
+      <div
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+      >
+        <div class="">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">03.</h3>
+          <p class="text-white text-2xl pt-3 px-20 w-96">
+            Herding Cats: Making collaborations and partnerships work
+          </p>
+        </div>
+        <div>
+          <img
+            src="/assets/images/implementation/herding-cats-banner.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/vandana.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Vandana Nadig Nair</p>
+            <p class="text-white">Phicus Social Solutions</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Interactive session, Group work
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/phicus.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Navigating the intricate dynamics of managing diverse stakeholders,
+          often likened to the challenging task of “herding cats,” reveals the
+          complex dance of coordination and alignment required in collaborative
+          efforts. This analogy captures the multifaceted nature of stakeholder
+          engagement, where varying interests, objectives, and personalities
+          must be harmonised towards a common goal.
+        </p>
+        <p class="pt-4">
+          As participants delved into the art of fostering collaboration and
+          consensus among divergent groups, a clear theme emerged: the essence
+          of effective leadership, communication, and adaptability in steering
+          these dynamic interactions. The discussions illuminated the delicate
+          balance of stakeholder management, emphasising the cultivation of
+          trust, alignment of objectives, and cultivation of a shared vision to
+          navigate the diverse landscape of interests towards collective
+          progress.
+        </p>
+        <p class="pt-4">
+          Embracing the diversity of perspectives and strengths within
+          stakeholder groups was underscored as a key enabler of innovation and
+          sustainable outcomes. By harnessing the unique contributions of each
+          entity and fostering a collaborative spirit rooted in mutual respect
+          and purpose, the session highlighted the transformative power of
+          inclusive and cohesive stakeholder engagement strategies.
+        </p>
+        <p class="pt-4">
+          In essence, the session provided a captivating exploration of the
+          intricate challenges and rewarding strategies involved in
+          orchestrating effective stakeholder management, painting a vivid
+          picture of the strategic manoeuvres and empathetic leadership required
+          to harmonise the varied voices and interests towards a harmonious
+          symphony of collective action.
+        </p>
+      </div>
+    </div>
+
+    <!-- Herding Cats End -->
+    <!-- Data for Decisions Start -->
+    <section id="data">
+      <div
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+      >
+        <div class="">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">04.</h3>
+          <p class="text-white text-2xl pt-3 px-20 w-96">
+            Data for Decisions and Stories
+          </p>
+        </div>
+        <div>
+          <img src="/assets/images/implementation/data-banner.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/faciliator/siddhanth.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Siddhanth Swaheny</p>
+          </div>
+        </div>
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/priya.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Priya Prabhakaran</p>
+            <p class="text-white">Catalyst Management Services</p>
+          </div>
+        </div>
+        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/speakers/swapnil.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Swapnil Agarwal</p>
+            <p class="text-white">Dhwani Rural Information Systems</p>
+          </div>
+        </div>
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/speakers/vinay.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Vinay Venu</p>
+            <p class="text-white">
+              Samanvay Research and Development Foundation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="font-semibold text-lg">
+          The examination of blended finance focused on how it can bridge the
+          gap between social impact and financial returns, especially within
+          India’s development sector. The primary goals were to present global
+          trends in blended finance, highlight case studies of social
+          enterprises utilising philanthropic capital, and encourage discussions
+          on integrating blended finance into participants’ initiatives. These
+          goals were achieved through diverse case studies and expert insights.
+        </p>
+        <p class="pt-4">
+          One of the standout case studies was shared by Nirav Khambhati from
+          The Blended Finance Company, which is building a $50 million facility
+          to mobilise commercial working capital for MSMEs in the WASH sector.
+          He explained the challenges these enterprises face when raising debt
+          capital, mainly due to insufficient collateral or lack of lender
+          experience in underwriting for this segment. The discussion further
+          explored the broader ethical questions around the commercialisation of
+          basic needs like health and education.
+        </p>
+        <p class="pt-4">
+          Another critical point discussed was the importance of blended finance
+          in facilitating social impact. Speakers noted that SSE can democratise
+          funding by using financial instruments such as social venture funds
+          and impact bonds, providing both financial returns and measurable
+          social impact. By leveraging these instruments, the SSE can unlock new
+          funding streams and encourage more investors to participate in the
+          social sector. Mr. Mangesh emphasised the importance of bringing
+          process orientation and discipline to NPOs, which can instil
+          confidence in investors and enhance the credibility of listed
+          organisations.
+        </p>
+        <p class="pt-4">
+          Another interesting example came from Game Changers Law, which
+          presented the use of convertible notes to facilitate soft debt for Me
+          Meraki, a for-profit enterprise working with artisans. This example
+          showed how private, non-philanthropic funds could be structured to
+          benefit both social enterprises and investors.
+        </p>
+        <p class="pt-4">
+          The case study by Waterfield focused on a pooled UHNI fund that
+          provided capital access to women’s joint liability groups, packaging
+          the investment in a way that emphasised both returns and social
+          impact, appealing to commercial investors without losing the focus on
+          wealth generation for underserved communities.
+        </p>
+        <p class="pt-4">
+          A key takeaway was that structuring a blended finance program requires
+          a strong Monitoring, Evaluation, and Learning (MEL) framework from day
+          one to build trust among philanthropists and investors.
+        </p>
+        <p class="pt-4">
+          In short, blended finance, as demonstrated through these case studies,
+          holds transformative potential by making social ventures more
+          “bankable,” helping to align philanthropic goals with commercial
+          returns, and driving capital towards achieving Sustainable Development
+          Goals (SDGs). The panellists emphasised that future efforts should
+          focus on bringing donors, investors, and social enterprises together
+          through well-structured, impact-driven financial instruments.
+        </p>
+      </div>
+    </div>
+
+    <!-- Data for Decisiosn End -->
+
+    <!--  Tech For all Start -->
+    <section id="tech">
+      <div
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+      >
+        <div class="">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">05.</h3>
+          <p class="text-white text-2xl pt-3 px-20 w-96">
+            Tech for all and no code
+          </p>
+        </div>
+        <div>
+          <img src="/assets/images/implementation/tech-banner.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/faciliator/shabbir.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Shabbir Haider</p>
+            <p class="text-white">Futurelab Studios</p>
+          </div>
+        </div>
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/dummy.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Madhavi Shapeti</p>
+            <p class="text-white">BoswMa</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Interactive Session, Masterclass
+        </h3>
+
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/futurelab.png"
+            alt=""
+          />
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/boosma.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Technology and artificial intelligence (AI) offer transformative
+          potential for enhancing implementation quality and fidelity across
+          various sectors, particularly in social impact initiatives. The
+          experts shared how the integration of AI and no-code platforms
+          provides innovative solutions to common challenges such as resource
+          constraints, data management, and scalability issues.
+        </p>
+        <p class="pt-4">
+          AI serves as a powerful tool to enhance human thinking and
+          decision-making. By simulating conversations with historical figures
+          or generating creative content like images and videos, AI expands the
+          horizons of learning and creativity. Tools like Midjourney and Runway
+          exemplify how AI can revolutionise creative processes, allowing users
+          to generate high-quality images and videos through simple text
+          prompts.
+        </p>
+        <p class="pt-4">
+          In the social impact sector, the application of AI and no-code tools
+          like Airtable, Asana, and Trello streamlines project workflows and
+          enhances data management. These technologies facilitate the creation
+          of basic CRM systems and automate complex workflows, thereby improving
+          project efficiency and communication. The integration of AI
+          capabilities into such platforms promises even more advanced data
+          analysis and automation in the future. No-code tools allow
+          non-programmers to build data pipelines and CRMs. The session also
+          explored practical use cases, including community engagement, feedback
+          collection, and scaling impact.
+        </p>
+        <p class="pt-4">
+          Despite these opportunities, challenges remain in the widespread
+          adoption of AI, including the high cost of access to powerful
+          computing resources and the limited availability of AI models in
+          non-English languages. Nevertheless, the rapid advancement of AI
+          technology suggests a future where more inclusive and accessible
+          solutions are possible.
+        </p>
+        <p class="pt-4">
+          The session highlighted India’s growing role as a hub for social
+          impact initiatives and the transformative potential of AI and no-code
+          solutions in this context. By contrasting traditional methods with
+          modern technological approaches, the discussion underscored the rapid
+          acceleration and accessibility of AI technologies, which promise to
+          democratise access and accelerate innovation in the social sector.
+        </p>
+        <p class="pt-4">
+          Overall, the session emphasised the need for social sector
+          organisations to explore and adopt these tools to boost efficiency,
+          scalability, and impact, while staying mindful of data privacy and
+          security concerns. It is also imperative to consider ethical
+          implications and equitable access to ensure their benefits are
+          maximised for all, across all sectors.
+        </p>
+      </div>
+    </div>
+
+    <!-- Market Acess End -->
+    <!-- Reimagining Start -->
+    <section
+      id="reimagining"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+    >
+      <div class="">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">06.</h3>
+        <p class="text-white text-2xl pt-3 px-20 w-96">
+          Reimagining implementation at scale:
+        </p>
+      </div>
+      <div>
+        <img
+          src="/assets/images/implementation/reimagining-banner.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/kallan.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Kallan Gowda</p>
+            <p class="text-white">Catalyst Management Services</p>
+          </div>
+        </div>
+        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/speakers/anand.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Anand Arkalgoud</p>
+            <p class="text-white">Socion</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Interactive workshop
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/socion.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Market access is crucial for the success of Farmer Producer Companies
+          (FPCs) as it directly impacts their ability to be profitable and
+          improve livelihoods for the farmers earn for their members. The
+          existing agricultural value chains and the institutional frameworks
+          restrict the ability of the farmers and the producer companies to
+          receive a fair price for their produce . These legacy based systems
+          thus need to be disrupted to create new institutional frameworks that
+          reduce the risks being borne by the farmers via a commercial entity
+          that is market facing and incentivises the farmers and the producer
+          companies to focus on improving their productivity , implement package
+          of agricultural practises and primary and secondary processing leading
+          to value addition.
+        </p>
+        <p class="pt-4">
+          One of the standout case studies was shared by Nirav Khambhati from
+          The Blended Finance Company, which is building a $50 million facility
+          to mobilise commercial working capital for MSMEs in the WASH sector.
+          He explained the challenges these enterprises face when raising debt
+          capital, mainly due to insufficient collateral or lack of lender
+          experience in underwriting for this segment. The discussion further
+          explored the broader ethical questions around the commercialisation of
+          basic needs like health and education.
+        </p>
+        <p class="pt-4">
+          This session delved into the multifaceted challenges hindering the
+          progress of FPCs in the agricultural domain. Participants engaged in
+          insightful conversations focusing on issues such as supply chain
+          inefficiencies, limited bargaining power, and the critical lack of
+          access to formal credit, all of which impede the growth potential of
+          FPCs. The discussions emphasised the urgent need for innovative
+          solutions that place a strong emphasis on bolstering infrastructure,
+          streamlining financial systems, and implementing proactive market
+          access reforms tailored specifically to suit the dynamic needs of
+          FPCs.
+        </p>
+        <p class="pt-4">
+          These deliberations underscored the importance of empowering FPCs to
+          navigate the complex agricultural landscape with greater efficiency
+          and resilience.
+        </p>
+        <p class="pt-4">
+          The collaborative efforts within the groups underscored a collective
+          commitment to enhancing governance structures, ensuring financial
+          inclusivity, and fostering sustainable practices within the FPC
+          ecosystem. By advocating for the establishment of a market-oriented
+          federated structure and exploring unconventional strategies such as
+          joint ventures with key buyers, participants aimed to drive FPCs
+          towards greater scalability, market penetration, and sustainability.
+        </p>
+        <p class="pt-4">
+          The overarching narrative from the session highlighted the imperative
+          need for personalised, forward-thinking solutions that prioritise
+          access to vital resources like working capital, market intelligence,
+          and strategic partnerships tailored to the unique requirements of
+          FPCs. This collective approach aimed to catalyse transformative
+          change, enabling FPCs to overcome existing barriers and thrive as key
+          players in the evolving agricultural sector.
+        </p>
+      </div>
+    </div>
+
+    <!-- Reimagining End -->
+    <!-- Bridging the Gap Start -->
+    <section
+      id="collaborating"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+    >
+      <div class="">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">07.</h3>
+        <p class="text-white text-2xl pt-3 px-20 w-96">
+          Bridging the Gap: Collaborating between Development Sector and
+          Government
+        </p>
+      </div>
+      <div>
+        <img src="/assets/images/implementation/anil-banner.png" alt="" />
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/binali.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Binali Suhandani</p>
+          </div>
+        </div>
+        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+        <div class="flex px-7 items-center gap-3">
+          <img
+            src="/assets/images/implementation/speakers/anil.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Anil Swarup</p>
+            <p class="text-white">Nexus of Good</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Masterclass
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-40"
+            src="/assets/images/implementation/collaborators/nexus.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Building capacity for partnership between the government and the
+          social sector is crucial for delivering citizen-centric services. The
+          focus is on transforming civil servants’ mindsets to prioritise
+          accountability and learning from citizens. This transformation,
+          however, requires patience, as meaningful change is expected to take
+          time.
+        </p>
+        <p class="pt-4">
+          The session discussions highlighted the shift from a state-centric
+          provider model to a facilitator role, emphasising the importance of
+          collaboration with civil society. This approach aims to reduce power
+          asymmetry and foster “Jan Bhagidari” (people’s participation). The
+          transition from a rule-based to a role-based approach, known as
+          “Karamyogi,” is central to this capacity-building effort. It focuses
+          on being future-ready and deploying emerging technologies for
+          self-reliance and accountability.
+        </p>
+        <p class="pt-4">
+          Challenges include addressing the middle tier of civil servants, where
+          resistance to change is often most pronounced. Programs like Dakshata
+          are being developed to enhance knowledge partnerships and bridge gaps
+          across different levels of governance. The importance of expanding
+          training efforts beyond IAS officers to include state cadre and urban
+          local bodies was also emphasised.
+        </p>
+        <p class="pt-4">
+          The session underscored the need for patience in seeing results, as
+          the transformation of the state into a more citizen-friendly entity is
+          a long-term endeavour. Speakers also stressed that the civil servants
+          become more accountable to citizens, thus creating a stronger, more
+          responsive state.
+        </p>
+        <p class="pt-4">
+          Overall, the session acknowledged the necessity of mutual
+          understanding and trust between the government and civil society. By
+          leveraging collaborative efforts and focusing on comprehensive
+          capacity building, both sectors can work together more effectively to
+          meet the needs of the public.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bridging the Gap End -->
+    <!-- Transforming Start -->
+    <section
+      id="digital"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+    >
+      <div class="">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">08.</h3>
+        <p class="text-white text-2xl pt-3 px-20 w-96">
+          Transforming District Economies: Leveraging Digital Public
+          Infrastructure for MSMEs
+        </p>
+      </div>
+      <div>
+        <img
+          src="/assets/images/implementation/reimagining-banner.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="lg:flex justify-center bg-[#7E3F98]">
+      <div class="w-[50%]">
+        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/faciliator/madan.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Madan Padki</p>
+            <p class="text-white">Catalyst Management Services</p>
+          </div>
+        </div>
+        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+        <div class="flex px-7 items-center gap-3 border-b border-dotted">
+          <img
+            src="/assets/images/implementation/speakers/anil.png"
+            class="w-20 mb-3"
+            alt=""
+          />
+          <div>
+            <p class="text-[#F5D47B]">Anil Swarup</p>
+            <p class="text-white">Nexus of Good</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+          Format: Interactive workshop
+        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/implementation/collaborators/head.png"
+            alt=""
+          />
+          <img
+            class="w-20"
+            src="/assets/images/implementation/collaborators/cms.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+        <p class="">
+          Focusing on transforming district economies through digital public
+          infrastructure, this session emphasised fostering local growth and
+          inclusivity via digital platforms.
+        </p>
+        <p class="pt-4">
+          Participants explored the potential of district economies, citing
+          examples like Mandya, and considered how to redistribute wealth more
+          equitably. They highlighted the importance of decentralised,
+          grassroots-driven models, such as cooperatives and digital
+          enterprises, in empowering MSMEs and rural entrepreneurs. Key
+          challenges included access to financial data, branding, and
+          infrastructure, particularly for women entrepreneurs, while also
+          recognizing the role of emerging technologies in overcoming these
+          barriers.
+        </p>
+        <p class="pt-4">
+          Three central themes emerged: the necessity of digital inclusion and
+          infrastructure development to support local entrepreneurs; the
+          critical role of cooperatives and community-driven governance in
+          fostering sustainable growth; and the opportunities presented by
+          digital public infrastructures (DPIs) to enable MSMEs to scale and
+          connect to larger markets. Models like UPI and ONDC were highlighted
+          as examples of creating digital ecosystems that support local
+          producers, enhance financial inclusion, and drive sustainable
+          development at the district level.
+        </p>
+        <p class="pt-4">
+          Participants discussed challenges such as inadequate financial data
+          for lending, lack of local branding, and digital inclusion gaps. They
+          advocated for grassroots-driven economic growth through digital
+          cooperatives, where producers own and control the digital
+          infrastructure. Leveraging open networks like UPI and health/agri
+          stacks can drive local entrepreneurship and improve wealth
+          distribution.
+        </p>
+        <p class="pt-4">
+          The vision for 2034 includes self-sustaining, climate-resilient, and
+          digitally empowered communities. Proposals included creating a trustee
+          venture fund and tokenizing digital entrepreneur participation to
+          accelerate district economies, fostering financial inclusion and
+          sustainable growth. Strategies to unlock entrepreneurial potential in
+          underserved districts involved forming partnerships among MSMEs,
+          government bodies, and non-profits, promoting regional brands, and
+          establishing decentralised networks for services and products. The
+          session concluded with action items such as creating thought papers,
+          convening working groups, and leveraging platforms like the Karnataka
+          Digital Economy Mission to scale district economies and discover
+          district-based unicorns.
+        </p>
+      </div>
+    </div>
+
+    <!-- Reimagining End -->
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+      // Smooth scroll behavior
+      document.querySelectorAll(".tab-link").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          document
+            .getElementById(targetId)
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      // Function to update active tab
+      function updateActiveTab() {
+        let scrollPosition = window.scrollY + 100; // Offset for better detection
+        document.querySelectorAll(".section").forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            document.querySelectorAll(".tab-link").forEach((tab) => {
+              tab.classList.remove("bg-[#7E3F98]", "text-white");
+              tab.classList.add("text-black");
+              if (tab.getAttribute("href").substring(1) === section.id) {
+                tab.classList.add("bg-[#7E3F98]", "text-white");
+              }
+            });
+          }
+        });
+      }
+
+      // Attach scroll event
+      window.addEventListener("scroll", updateActiveTab);
+
+      // Initialize active tab on load
+      updateActiveTab();
+
+      // for tab content
+      function changeTab(event, tabName) {
+        document.querySelectorAll(".theme-content").forEach((content) => {
+          content.classList.add("hidden");
+        });
+
+        document.querySelectorAll(".theme-tab").forEach((tab) => {
+          tab.classList.remove("bg-[#F5D47B]", "text-[#7E3F98]");
+          tab.classList.add("bg-transparent", "text-black");
+          tab.querySelector("div")?.classList.add("hidden");
+        });
+
+        event.currentTarget.classList.add("bg-[#F5D47B]", "text-[#7E3F98]");
+        event.currentTarget.classList.remove(
+          "bg-transparent",
+          "text-[#F5D47B]"
+        );
+        event.currentTarget.querySelector("div")?.classList.remove("hidden");
+
+        document.getElementById(tabName).classList.remove("hidden");
+      }
+
+      //   for Growth Tab content
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-button");
+        const contents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove active styles
+            tabs.forEach((t) => {
+              t.style.backgroundColor = "#EDE2F4"; // Default color
+              t.style.color = "#000"; // Default text color
+            });
+            contents.forEach((c) => c.classList.add("hidden"));
+
+            // Add active styles
+            this.style.backgroundColor = "bg-[#7F4197]"; // Active color
+            this.style.color = "#fff"; // Active text color
+
+            document
+              .getElementById(this.dataset.tab)
+              .classList.remove("hidden");
+          });
+        });
+
+        // Set the first tab as active by default
+        tabs[0].style.backgroundColor = "#7F4197";
+        tabs[0].style.color = "#fff";
+      });
+
+      //   for carousel overview
+      const carousel = document.getElementById("carousel");
+      const images = document.querySelectorAll("#carousel img");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+
+      let index = 0;
+
+      function updateCarousel() {
+        let imgWidth = images[0].clientWidth + 16;
+        let slidesToShow = window.innerWidth < 640 ? 1 : 3; // 1 on mobile, 3 on larger screens
+        let maxIndex = images.length - slidesToShow;
+
+        if (index > maxIndex) {
+          index = 0; // Loop back to start
+        } else if (index < 0) {
+          index = maxIndex; // Loop to end
+        }
+
+        carousel.style.transform = `translateX(-${index * imgWidth}px)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        index++;
+        updateCarousel();
+      });
+
+      prevBtn.addEventListener("click", () => {
+        index--;
+        updateCarousel();
+      });
+
+      window.addEventListener("resize", updateCarousel); // Ensure proper resizing behavior
+    </script>
+  </body>
+</html>
