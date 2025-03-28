@@ -12,178 +12,188 @@
     />
   </head>
   <body class="bg-white">
-    <!-- HEader starts here -->
-    <nav class="bg-white shadow-md py-4 px-6">
-      <div class="container mx-auto flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <a href="/">
-            <img
-              src="/assets/images/csi-logo.png"
-              alt="csi-logo"
-              class="w-48 h-auto"
-          /></a>
-        </div>
-        <div class="hidden md:flex space-x-6">
-          <a href="#" class="text-black font-medium">Executive Summary</a>
-          <div class="relative dropdown">
-            <button class="text-black font-medium">
-              Event Highlights
-              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
-            </button>
-            <div
-              class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8]"
-            >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Keynote Speeches</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >CSI Awards</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Performances and Cultural Expressions</a
-              >
-              <a
-                href="/human-library-and-story-telling.html"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Human Library and Storytelling</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Wicked Solutions</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Film Showcase</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Exhibitions and Photography</a
-              >
-            </div>
-          </div>
-          <div class="relative dropdown">
-            <button class="text-black font-medium">
-              Event Themes
-              <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
-            </button>
-            <div
-              class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden"
-            >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Innovative Finance</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Implementation Fidelity and Quality</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Grounded Climate Response</a
-              >
-            </div>
-          </div>
-          <a href="#" class="text-black font-medium"
-            >Coalition Launches & Partnerships</a
-          >
-        </div>
-        <button class="md:hidden text-black text-2xl" onclick="toggleMenu()">
-          ☰
-        </button>
+    <!-- Header Start -->
+   <nav class="bg-white shadow-md py-4 px-6">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <a href="/">
+          <img
+            src="/assets/images/csi-logo.png"
+            alt="csi-logo"
+            class="w-48 h-auto"
+        /></a>
       </div>
-      <!-- Mobile Menu inside the container -->
-      <div class="container mx-auto">
-        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
-          <a href="#" class="text-black font-medium py-2">Executive Summary</a>
-          <div class="relative">
-            <button
-              class="text-black font-medium py-2"
-              onclick="toggleDropdown('mobileDropdown1')"
-            >
-              Event Highlights <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Keynote Speeches</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >CSI Awards</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Performances and Cultural Expressions</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Human Library and Storytelling</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Wicked Solutions</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Film Showcase</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Exhibitions and Photography</a
-              >
-            </div>
-          </div>
-          <div class="relative">
-            <button
-              class="text-black font-medium py-2"
-              onclick="toggleDropdown('mobileDropdown2')"
-            >
-              Event Themes <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Innovative Finance</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Implementation Fidelity and Quality</a
-              >
-              <a
-                href="#"
-                class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
-                >Grounded Climate Response</a
-              >
-            </div>
-          </div>
-          <a href="#" class="text-black font-medium py-2"
-            >Coalition Launches & Partnerships</a
+      <div class="hidden md:flex space-x-6">
+        <a href="/executive-summary.html" class="text-black font-medium"
+          >Executive Summary</a
+        >
+        <div class="relative dropdown">
+          <button class="text-black font-medium">
+            Event Highlights
+            <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+          </button>
+          <div
+            class="dropdown-menu rounded-none overflow-hidden bg-[#E6D4E8] w-72"
           >
+            <a
+              href="/keynote-speeches.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Keynote Speeches</a
+            >
+            <a
+              href="/csi-awards.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >CSI Awards</a
+            >
+            <a
+              href="/echos-of-earth.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Performances and Cultural Expressions</a
+            >
+            <a
+              href="/notable-events.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Notable Events</a
+            >
+            <a
+              href="/wicked-solutions.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Wicked Solutions</a
+            >
+            <a
+              href="/film-showcase.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Film Showcase</a
+            >
+            <a
+              href="/exhibitions-and-photography.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Exhibitions and Photography</a
+            >
+          </div>
         </div>
+        <div class="relative dropdown">
+          <button class="text-black font-medium">
+            Event Themes
+            <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+          </button>
+          <div
+            class="dropdown-menu rounded-none bg-[#E6D4E8] overflow-hidden w-72"
+          >
+            <a
+              href="/innovative-finance.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Innovative Finance</a
+            >
+            <a
+              href="/implementation-fidelity-and-quality.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Implementation Fidelity and Quality</a
+            >
+            <a
+              href="/grounded-climate-response.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Grounded Climate Response</a
+            >
+          </div>
+        </div>
+        <a
+          href="/coalition-launches-and-partnerships.html"
+          class="text-black font-medium"
+          >Coalition Launches & Partnerships</a
+        >
       </div>
-    </nav>
-    <!-- Header Ends here -->
+      <button class="md:hidden text-black text-5xl" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile Menu inside the container -->
+    <div class="container mx-auto">
+      <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden">
+        <a href="/executive-summary.html" class="text-black font-medium py-2"
+          >Executive Summary</a
+        >
+        <div class="relative">
+          <button
+            class="text-black font-medium py-2"
+            onclick="toggleDropdown('mobileDropdown1')"
+          >
+            Event Highlights
+            <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+          </button>
+          <div id="mobileDropdown1" class="hidden bg-[#E6D4E8] rounded-none">
+            <a
+              href="/keynote-speeches.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Keynote Speeches</a
+            >
+            <a
+              href="/csi-awards.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >CSI Awards</a
+            >
+            <a
+              href="/echos-of-earth.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Performances and Cultural Expressions</a
+            >
+            <a
+              href="/notable-events.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Notable Events</a
+            >
+            <a
+              href="/wicked-solutions.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Wicked Solutions</a
+            >
+            <a
+              href="/film-showcase.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Film Showcase</a
+            >
+            <a
+              href="/exhibitions-and-photography.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Exhibitions and Photography</a
+            >
+          </div>
+        </div>
+        <div class="relative">
+          <button
+            class="text-black font-medium py-2"
+            onclick="toggleDropdown('mobileDropdown2')"
+          >
+            Event Themes
+            <i class="fa-solid fa-chevron-down text-[#7E3F98]"></i>
+          </button>
+          <div id="mobileDropdown2" class="hidden bg-[#E6D4E8] rounded-none">
+            <a
+              href="/innovative-finance.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Innovative Finance</a
+            >
+            <a
+              href="/implementation-fidelity-and-quality.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Implementation Fidelity and Quality</a
+            >
+            <a
+              href="/grounded-climate-response.html"
+              class="dropdown-item hover:bg-[#D4AF37] hover:text-white"
+              >Grounded Climate Response</a
+            >
+          </div>
+        </div>
+        <a
+          href="/coalition-launches-and-partnerships.html"
+          class="text-black font-medium py-2"
+          >Coalition Launches & Partnerships</a
+        >
+      </div>
+    </div>
+  </nav>
+  <!-- Header End -->
     <!-- Banner Carousel -->
     <div class="relative w-full mx-auto overflow-hidden">
       <!-- Carousel Wrapper -->
@@ -198,70 +208,13 @@
             class="w-full object-cover"
           />
           <div class="absolute lg:bottom-10 bottom-3 w-full p-5">
-            <h2 class="text-white lg:text-2xl text-xl font-semibold text-center">
+            <h2 class="text-white lg:text-5xl text-2xl font-semibold text-center">
               Coalition Launches & Partnerships
             </h2>
           </div>
         </div>
-        <div class="w-full flex-shrink-0 relative">
-          <img
-            src="/assets/images/key-speeches/banner-carousel-01.png"
-            alt="Panel Discussion"
-            class="w-full object-cover"
-          />
-          <div class="absolute lg:bottom-10 bottom-3 w-full p-5">
-            <h2 class="text-white lg:text-2xl text-xl font-semibold text-center">
-              Panel Discussions
-            </h2>
-          </div>
-        </div>
-        <div class="w-full flex-shrink-0 relative">
-          <img
-            src="/assets/images/key-speeches/banner-carousel-01.png"
-            alt="Audience"
-            class="w-full object-cover"
-          />
-          <div class="absolute lg:bottom-10 bottom-3 w-full p-5">
-            <h2 class="text-white lg:text-2xl text-xl font-semibold text-center">
-              Engaging Audience
-            </h2>
-          </div>
-        </div>
       </div>
 
-      <!-- Left Arrow -->
-      <button
-        id="prev"
-        class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-[#7E3F98] text-white p-3 w-12 h-12 rounded-full opacity-75 hover:opacity-100 transition"
-      >
-        &#10094;
-      </button>
-
-      <!-- Right Arrow -->
-      <button
-        id="next"
-        class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-[#7E3F98] text-white p-3 w-12 h-12 rounded-full opacity-75 hover:opacity-100 transition"
-      >
-        &#10095;
-      </button>
-
-      <!-- Dots -->
-      <div
-        class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2"
-      >
-        <span
-          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
-          data-index="0"
-        ></span>
-        <span
-          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
-          data-index="1"
-        ></span>
-        <span
-          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
-          data-index="2"
-        ></span>
-      </div>
     </div>
     <!-- Banner Carousel End -->
     <!-- Speakers Start -->
@@ -480,103 +433,129 @@
       </div>
     </div>
 
-    <!-- Quick Link Start -->
-    <div class="bg-[#222222]">
-      <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
-        <h2 class="text-white text-lg font-semibold tracking-wide mb-6">
-          QUICK LINKS
-        </h2>
-        <div class="flex flex-wrap justify-center gap-4 items-end">
-          <a
-            href="/executive-summary.html"
-            class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Executive Summary</span>
-            <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/keynote-speeches.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Keynote Speeches</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/csi-awards.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>CSI Awards</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/echos-of-earth.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Performances and Cultural Expressions</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/wicked-solutions.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Wicked Solutions</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/human-library-and-story-telling.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Human Library and Storytelling</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/film-showcase.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Film Showcase</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="#"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Exhibitions and Photography</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/coalition-launches-and-partnerships.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Coalition Launches & Partnerships</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <br />
-          <p class="text-white lg:text-md text-lg flex items-center">Event Themes:</p>
-          <a
-            href="/innovative-finance.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Innovative Finance</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/implementation-fidelity-and-quality.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Implementation Fidelity and Quality</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-          <a
-            href="/grounded-climate-response.html"
-            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
-          >
-            <span>Grounded Climate Response</span>
-             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
-          </a>
-        </div>
+   <!-- Quick Link Start -->
+   <div class="bg-[#222222]">
+    <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
+      <h2 class="text-white text-lg font-semibold tracking-wide mb-6">
+        QUICK LINKS
+      </h2>
+      <div class="flex flex-wrap justify-center gap-4 items-end">
+        <a
+          href="/executive-summary.html"
+          class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Executive Summary</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/keynote-speeches.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Keynote Speeches</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/csi-awards.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>CSI Awards</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/echos-of-earth.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Performances and Cultural Expressions</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/wicked-solutions.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Wicked Solutions</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/notable-events.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Notable Events</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/film-showcase.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Film Showcase</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/exhibitions-and-photography.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Exhibitions and Photography</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/coalition-launches-and-partnerships.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Coalition Launches & Partnerships</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <br />
+        <p class="text-white lg:text-md text-lg flex items-center">
+          Event Themes:
+        </p>
+        <a
+          href="/innovative-finance.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Innovative Finance</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/implementation-fidelity-and-quality.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Implementation Fidelity and Quality</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
+        <a
+          href="/grounded-climate-response.html"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+        >
+          <span>Grounded Climate Response</span>
+          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+            ><i class="fas fa-arrow-right -rotate-45"></i
+          ></span>
+        </a>
       </div>
     </div>
-    <!-- Quick Links End -->
+  </div>
+  <!-- Quick Links End -->
     <script>
       // for mobile menu
       function toggleMenu() {
