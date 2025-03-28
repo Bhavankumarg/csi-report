@@ -196,7 +196,7 @@
         <div
           class="bg-[#7E3F98] text-white text-center py-6 px-4 lg:max-w-5xl w-full"
         >
-          <h2 class="text-4xl font-semibold text-[#F5D47B] py-5">
+          <h2 class="lg:text-4xl text-2xl font-semibold text-[#F5D47B] py-5">
             Grounded Climate Response
           </h2>
           <p class="text-xl mt-2 max-w-3xl mx-auto pb-3">
@@ -209,45 +209,36 @@
     </div>
     <!-- Banner End -->
     <!-- Sticky Tabs -->
-    <div class="sticky top-0 bg-[#EDE2F4] shadow-md absolute z-10">
-      <div id="tabs" class="flex overflow-x-auto">
-        <a
-          href="#overview"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Overview</a
-        >
-        <a
-          href="#frightening"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Frightening Future to Nourishing Now</a
-        >
-        <a
-          href="#youth-led"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Youth-led Food Transformation</a
-        >
-        <a
-          href="#building-resilience"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Building Resilience</a
-        >
-        <a
-          href="#integrated-climate"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Integrated Climate and Health Response</a
-        >
-        <a
-          href="#global-warming"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Global Warming</a
-        >
+    <div class="sticky top-0 bg-[#EDE2F4] shadow-md z-10">
+      <!-- Desktop View -->
+      <div id="tabs" class="hidden md:flex overflow-x-auto items-center">
+        <a href="#overview" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Overview</a>
+        <a href="#frightening" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Frightening Future to Nourishing Now</a>
+        <a href="#youth-led" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Youth-led Food Transformation</a>
+        <a href="#building-resilience" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Building Resilience</a>
+        <a href="#integrated-climate" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Integrated Climate and Health Response</a>
+        <a href="#global-warming" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Global Warming</a>
+      </div>
+      
+      <!-- Mobile Dropdown -->
+      <div class="md:hidden relative">
+        <button id="dropdownButton" class="w-full py-4 border shadow-xl bg-[#7E3F98] text-white text-center">Select Section <i class="fa-solid fa-chevron-down"></i></button>
+        <ul id="dropdownMenu" class="hidden absolute w-full bg-white shadow-lg">
+          <li><a href="#overview" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Overview</a></li>
+          <li><a href="#frightening" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Frightening Future to Nourishing Now</a></li>
+          <li><a href="#youth-led" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Youth-led Food Transformation</a></li>
+          <li><a href="#building-resilience" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Building Resilience</a></li>
+          <li><a href="#integrated-climate" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Integrated Climate and Health Response</a></li>
+          <li><a href="#global-warming" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Global Warming</a></li>
+        </ul>
       </div>
     </div>
-
+    
+   
     <!-- Content Sections -->
-    <div class="relative" id="overview">
-      <div class="max-w-6xl mx-auto container flex flex-col items-center py-20">
-        <h2 class="text-center text-gray-700 text-2xl mb-6 lg:w-[90%]">
+    <div class="relative p-5" id="overview">
+      <div class="max-w-6xl mx-auto container flex flex-col items-center lg:py-20 py-10">
+        <h2 class="text-center text-gray-700 text-xl lg:text-2xl mb-6 lg:w-[90%]">
           Across the sessions on Youth-led Food Transformation, Building
           Resilience for Vulnerable People, Integrated Climate and Health
           Response, and the Systems Mapping game on Global Warming, several
@@ -356,7 +347,7 @@
       <!-- Bottom Left Decorative Icon -->
       <div class="absolute bottom-0 left-0 flex justify-center items-center">
         <img
-          class="w-40"
+          class="lg:w-40 w-24 h-20 lg:h-36"
           src="/assets/images/innovative-finance/bottom-left-icon.svg"
           alt=""
         />
@@ -364,7 +355,7 @@
       <!-- Bottom Right Decorative Icon -->
       <div class="absolute bottom-0 right-0 flex justify-center items-center">
         <img
-          class="w-40"
+          class="lg:w-40 w-24 h-20 lg:h-36"
           src="/assets/images/innovative-finance/bottom-right-icon.svg"
           alt=""
         />
@@ -378,10 +369,10 @@
     </div>
 
     <section id="frightening">
-      <div class="lg:flex items-center justify-center bg-[#904DAC] space-x-24">
-        <div class="w-full max-w-sm">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">01.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+      <div class="lg:flex items-center justify-center bg-[#904DAC] lg:space-x-24">
+        <div class="w-full max-w-sm lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">01.</h3>
+          <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10 lg:w-96">
             Frightening Future to Nourishing Now
           </p>
         </div>
@@ -394,7 +385,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3">
@@ -446,7 +437,7 @@
           Collaborator: ComMunity, VartaLeap
         </h3>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
         <p class="">
           Highlighting the importance of moving from fear-driven to hope-driven
           responses, the discussions during the session emphasised resilience
@@ -502,11 +493,11 @@
     <!-- Micro Equity Section Start -->
     <section
       id="youth-led"
-      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-10"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-20"
     >
-      <div class="max-w-2xl">
-        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">02.</h3>
-        <p class="text-white text-2xl pt-3 px-20">
+      <div class="lg:max-w-2xl lg:p-0 p-5">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">02.</h3>
+        <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10">
           Youth-led Food Transformation using Agroecological Modules
         </p>
       </div>
@@ -518,7 +509,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3">
@@ -592,7 +583,7 @@
           />
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="">
           Exploring the pivotal role young people play in transforming food
           systems, this session emphasised the importance of youth leadership in
@@ -642,11 +633,11 @@
     <!-- Poineering Start -->
     <section id="building-resilience">
       <div
-        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">03.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">03.</h3>
+          <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10 lg:w-96">
             Building Resilience for Vulnerable People: Systemic Risk and
             Response Perspective
           </p>
@@ -660,7 +651,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3">
@@ -682,7 +673,6 @@
           />
           <div>
             <p class="text-[#F5D47B]">Siddhanth Sawaney</p>
-
           </div>
         </div>
 
@@ -703,229 +693,161 @@
           />
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
         <p class="">
           Centred on the ASRA’s Systemic Risk Assessment/Systemic Risk Response
           tool, this session aimed to gather feedback on its applicability from
-          Indian practitioners. 
+          Indian practitioners.
         </p>
         <p class="pt-4">
-            Participants appreciated the principles and the
-            tool for their potential to foster a comprehensive understanding of
-            systemic risk by encouraging users to consider multiple,
-            interconnected risks simultaneously. This holistic approach was
-            recognized for its ambition to build a field around systemic risk
-            response, which could enhance the depth and effectiveness of
-            interventions. The tool’s framework was seen as a valuable starting
-            point for fostering collaboration and dialogue among diverse
-            stakeholders.
+          Participants appreciated the principles and the tool for their
+          potential to foster a comprehensive understanding of systemic risk by
+          encouraging users to consider multiple, interconnected risks
+          simultaneously. This holistic approach was recognized for its ambition
+          to build a field around systemic risk response, which could enhance
+          the depth and effectiveness of interventions. The tool’s framework was
+          seen as a valuable starting point for fostering collaboration and
+          dialogue among diverse stakeholders.
         </p>
         <p class="pt-4">
-            Participants also provided constructive criticism,
-            noting that the criteria are overly complex and filled with jargon,
-            making it difficult for users to engage effectively. Simplification,
-            including the use of images or sketches, was suggested to enhance
-            usability and scalability. 
+          Participants also provided constructive criticism, noting that the
+          criteria are overly complex and filled with jargon, making it
+          difficult for users to engage effectively. Simplification, including
+          the use of images or sketches, was suggested to enhance usability and
+          scalability.
         </p>
         <p class="pt-4">
-            The principles underpinning the tool were
-            regarded as universal but lacked practical direction, failing to
-            resonate with on-ground realities. Participants highlighted the need
-            for a more targeted approach, allowing users to prioritise and justify
-            their focus areas without being overwhelmed by exhaustive criteria.
-            
+          The principles underpinning the tool were regarded as universal but
+          lacked practical direction, failing to resonate with on-ground
+          realities. Participants highlighted the need for a more targeted
+          approach, allowing users to prioritise and justify their focus areas
+          without being overwhelmed by exhaustive criteria.
         </p>
         <p class="pt-4">
-            During the Q&A, concerns were raised about the tool’s purpose—whether
-            it serves for evaluation or risk identification. It was clarified that
-            the tool is intended to consider multiple risks simultaneously,
-            advocating for a systemic response rather than addressing isolated
-            risks. 
+          During the Q&A, concerns were raised about the tool’s purpose—whether
+          it serves for evaluation or risk identification. It was clarified that
+          the tool is intended to consider multiple risks simultaneously,
+          advocating for a systemic response rather than addressing isolated
+          risks.
         </p>
         <p class="pt-4">
-            Key actions identified included the need for user guidance to
-            make the tool more accessible and relevant. Further collaboration
-            between Swasti, ASRA, and experts like Professor Partha was proposed
-            to refine the principles and criteria, ensuring they are both
-            practical and adaptable to diverse contexts.
+          Key actions identified included the need for user guidance to make the
+          tool more accessible and relevant. Further collaboration between
+          Swasti, ASRA, and experts like Professor Partha was proposed to refine
+          the principles and criteria, ensuring they are both practical and
+          adaptable to diverse contexts.
         </p>
       </div>
     </div>
 
     <!-- Poineering End -->
-    <!-- Unblocking Start -->
+    <!-- integrated-climate Start -->
     <section id="integrated-climate">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">04.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
-            <b>Unblocking Blended Finance: </b> Philanthropic Capital Solutions
-            for Commercial Social Ventures
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">04.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
+            Integrated Climate and Health Response
           </p>
         </div>
         <div>
-          <img
-            src="/assets/images/innovative-finance/poineering-banner.png"
-            alt=""
-          />
+          <img src="/assets/images/grounded-climate/shiv-banner.png" alt="" />
         </div>
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Purnima J</p>
-            <p class="text-white">Buzz</p>
-          </div>
-        </div>
-        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/grounded-climate/faciliator/binali.png"
             class="w-20 mb-3"
             alt=""
           />
           <div>
-            <p class="text-[#F5D47B]">Anita George</p>
-            <p class="text-white">ProsperETE</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Ritesh Thakkar</p>
-            <p class="text-white">Convergence Asia</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Nirav Khambhati</p>
-            <p class="text-white">The Blended Finance Company</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Samheeta Rao</p>
-            <p class="text-white">Game Changers Law</p>
+            <p class="text-[#F5D47B]">Binali Suhandani</p>
           </div>
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/grounded-climate/faciliator/shiv.png"
             class="w-20 mb-3"
             alt=""
           />
           <div>
-            <p class="text-[#F5D47B]">Prabhir Correa</p>
-            <p class="text-white">Waterfield</p>
+            <p class="text-[#F5D47B]">Shiv Kumar</p>
           </div>
         </div>
 
         <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
-          Format: Plenary with Case Study Analysis
+          Format: Roundtable Discussion
         </h3>
-        <h3 class="text-lg text-white p-3 px-7">
-          Collaborator: Gamechanger Law, Waterfield,
-        </h3>
+        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+        <div class="flex gap-3 px-7 pb-10">
+          <img
+            class="w-32"
+            src="/assets/images/grounded-climate/collaborators/cphc.png"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
-        <p class="font-semibold text-lg">
-          The examination of blended finance focused on how it can bridge the
-          gap between social impact and financial returns, especially within
-          India’s development sector. The primary goals were to present global
-          trends in blended finance, highlight case studies of social
-          enterprises utilising philanthropic capital, and encourage discussions
-          on integrating blended finance into participants’ initiatives. These
-          goals were achieved through diverse case studies and expert insights.
+      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
+        <p class="pt-4">
+          Delving into the vital intersection between health and climate, the
+          Integrated Climate and Health Response session stressed the necessity
+          of collaborative efforts for scalable impacts. The CPHC alliance, a
+          USAID-supported initiative led by Swasti, exemplifies a
+          multi-stakeholder coalition with over 30 members, including USAID and
+          ADB, dedicated to comprehensive primary health care.
         </p>
         <p class="pt-4">
-          One of the standout case studies was shared by Nirav Khambhati from
-          The Blended Finance Company, which is building a $50 million facility
-          to mobilise commercial working capital for MSMEs in the WASH sector.
-          He explained the challenges these enterprises face when raising debt
-          capital, mainly due to insufficient collateral or lack of lender
-          experience in underwriting for this segment. The discussion further
-          explored the broader ethical questions around the commercialisation of
-          basic needs like health and education.
+          The discussions highlighted that achieving scale requires collective
+          action rooted in shared values and ambitious goals. The energy of
+          leadership and the role of a backbone organisation are pivotal in
+          maintaining coalition cohesion and a sense of urgency. Clearly
+          defining roles and benefits for each participant is crucial to ensure
+          accountability and shared ownership within the coalition.
         </p>
         <p class="pt-4">
-          Another critical point discussed was the importance of blended finance
-          in facilitating social impact. Speakers noted that SSE can democratise
-          funding by using financial instruments such as social venture funds
-          and impact bonds, providing both financial returns and measurable
-          social impact. By leveraging these instruments, the SSE can unlock new
-          funding streams and encourage more investors to participate in the
-          social sector. Mr. Mangesh emphasised the importance of bringing
-          process orientation and discipline to NPOs, which can instil
-          confidence in investors and enhance the credibility of listed
-          organisations.
+          The alliance aims to enhance health outcomes through preventive and
+          promotive care, focusing on patient-centric approaches. Embedding
+          goals into systems and offering well-defined service packages are key
+          strategies for achieving desired outcomes. Embracing complexity in
+          primary healthcare is essential for long-term success and
+          sustainability.
         </p>
         <p class="pt-4">
-          Another interesting example came from Game Changers Law, which
-          presented the use of convertible notes to facilitate soft debt for Me
-          Meraki, a for-profit enterprise working with artisans. This example
-          showed how private, non-philanthropic funds could be structured to
-          benefit both social enterprises and investors.
+          Addressing challenges, the session emphasised the importance of
+          government collaboration, resource optimization, and the improvement
+          of awareness and infrastructure. The coalition seeks to expand its
+          reach beyond India to Asia, leveraging collective expertise and frugal
+          innovations.
         </p>
         <p class="pt-4">
-          The case study by Waterfield focused on a pooled UHNI fund that
-          provided capital access to women’s joint liability groups, packaging
-          the investment in a way that emphasised both returns and social
-          impact, appealing to commercial investors without losing the focus on
-          wealth generation for underserved communities.
-        </p>
-        <p class="pt-4">
-          A key takeaway was that structuring a blended finance program requires
-          a strong Monitoring, Evaluation, and Learning (MEL) framework from day
-          one to build trust among philanthropists and investors.
-        </p>
-        <p class="pt-4">
-          In short, blended finance, as demonstrated through these case studies,
-          holds transformative potential by making social ventures more
-          “bankable,” helping to align philanthropic goals with commercial
-          returns, and driving capital towards achieving Sustainable Development
-          Goals (SDGs). The panellists emphasised that future efforts should
-          focus on bringing donors, investors, and social enterprises together
-          through well-structured, impact-driven financial instruments.
+          The evolving CPHC playbook focuses on institutionalising
+          sustainability, enhancing stakeholder capacities, and adapting
+          successful models from other countries. By exploring public-private
+          partnerships, the session called for innovative approaches to
+          healthcare delivery and community engagement, reinforcing the
+          coalition’s vision for comprehensive, patient-centred care.
         </p>
       </div>
     </div>
 
-    <!-- Unblocking End -->
+    <!-- integrated-climate End -->
 
-    <!-- Market Acess Start -->
+    <!-- Gloabal Warming Start -->
     <section id="global-warming">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">05.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
-            Market Access for Farmer Producer Companies (FPCs)
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">05.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
+            Global Warming: A Systems Mapping Game
           </p>
         </div>
         <div>
@@ -937,345 +859,167 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Mr Shirish Joshi</p>
-            <p class="text-white">
-              Consultant Organisation Design and Strategic HR
-            </p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Shambu Prasad Chebrolu</p>
-            <p class="text-white">IRMA</p>
-          </div>
-        </div>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Vishwanath HS</p>
-            <p class="text-white">Catalyst Management Services</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Mr CS Reddy</p>
-            <p class="text-white">Founder and CEO of APMAS</p>
-          </div>
-        </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/grounded-climate/speakers/dummy.png"
             class="w-20 mb-3"
             alt=""
           />
           <div>
-            <p class="text-[#F5D47B]">Mr Parthasarathy</p>
-            <p class="text-white">Skill Green</p>
+            <p class="text-[#F5D47B]">Suresh C.</p>
           </div>
         </div>
 
-        <h3 class="text-lg text-white p-3 px-7">Participating Companies:</h3>
-        <h3 class="text-white pb-5 px-7 border-b border-dotted">
-          Safe Harvest, PRADAN, Caspian, Suryamani, Socratus 1, SIDBI, Delloite
-          , RRAN, Zepto , FWWB , WASSAN , FES (CS) MORE Retail, GIZ ,
-          Technology- Carbon Mint , Inditex , ICC , SMORRE ,Organic Foods
+        <h3 class="text-white pb-5 px-7 p-3 border-b border-dotted">
+          Format: Group Game
         </h3>
-        <h3 class="text-lg text-white p-3 px-7">Sectoral Experts:</h3>
-        <h3 class="text-lg text-white px-7">Mr Ravishankar Natarajan</h3>
-        <h3 class="text-lg text-white px-7">Mr Muralidharan</h3>
-        <h3 class="text-lg text-white px-7">Mr Pramel</h3>
-        <h3 class="text-lg text-white pb-5 px-7">Mr Amit Malhotra</h3>
-      </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
-        <p class="">
-          Market access is crucial for the success of Farmer Producer Companies
-          (FPCs) as it directly impacts their ability to be profitable and
-          improve livelihoods for the farmers earn for their members. The
-          existing agricultural value chains and the institutional frameworks
-          restrict the ability of the farmers and the producer companies to
-          receive a fair price for their produce . These legacy based systems
-          thus need to be disrupted to create new institutional frameworks that
-          reduce the risks being borne by the farmers via a commercial entity
-          that is market facing and incentivises the farmers and the producer
-          companies to focus on improving their productivity , implement package
-          of agricultural practises and primary and secondary processing leading
-          to value addition.
-        </p>
-        <p class="pt-4">
-          One of the standout case studies was shared by Nirav Khambhati from
-          The Blended Finance Company, which is building a $50 million facility
-          to mobilise commercial working capital for MSMEs in the WASH sector.
-          He explained the challenges these enterprises face when raising debt
-          capital, mainly due to insufficient collateral or lack of lender
-          experience in underwriting for this segment. The discussion further
-          explored the broader ethical questions around the commercialisation of
-          basic needs like health and education.
-        </p>
-        <p class="pt-4">
-          This session delved into the multifaceted challenges hindering the
-          progress of FPCs in the agricultural domain. Participants engaged in
-          insightful conversations focusing on issues such as supply chain
-          inefficiencies, limited bargaining power, and the critical lack of
-          access to formal credit, all of which impede the growth potential of
-          FPCs. The discussions emphasised the urgent need for innovative
-          solutions that place a strong emphasis on bolstering infrastructure,
-          streamlining financial systems, and implementing proactive market
-          access reforms tailored specifically to suit the dynamic needs of
-          FPCs.
-        </p>
-        <p class="pt-4">
-          These deliberations underscored the importance of empowering FPCs to
-          navigate the complex agricultural landscape with greater efficiency
-          and resilience.
-        </p>
-        <p class="pt-4">
-          The collaborative efforts within the groups underscored a collective
-          commitment to enhancing governance structures, ensuring financial
-          inclusivity, and fostering sustainable practices within the FPC
-          ecosystem. By advocating for the establishment of a market-oriented
-          federated structure and exploring unconventional strategies such as
-          joint ventures with key buyers, participants aimed to drive FPCs
-          towards greater scalability, market penetration, and sustainability.
-        </p>
-        <p class="pt-4">
-          The overarching narrative from the session highlighted the imperative
-          need for personalised, forward-thinking solutions that prioritise
-          access to vital resources like working capital, market intelligence,
-          and strategic partnerships tailored to the unique requirements of
-          FPCs. This collective approach aimed to catalyse transformative
-          change, enabling FPCs to overcome existing barriers and thrive as key
-          players in the evolving agricultural sector.
-        </p>
-      </div>
-    </div>
-
-    <!-- Market Acess End -->
-    <!-- Private Financing Start -->
-    <section
-      id=""
-      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
-    >
-      <div class="">
-        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">06.</h3>
-        <p class="text-white text-2xl pt-3 px-20 w-96">
-          Private Financing for Decarbonization: Community-Based Ecosystem
-          Services for Commons
-        </p>
-      </div>
-      <div>
-        <img src="/assets/images/innovative-finance/market-access.png" alt="" />
-      </div>
-    </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Mr Shirish Joshi</p>
-            <p class="text-white">
-              Consultant Organisation Design and Strategic HR
-            </p>
-          </div>
-        </div>
-        <h3 class="text-lg text-white p-3 px-7">Panelists:</h3>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Vijay Vardhan</p>
-            <p class="text-white">ITC Ltd</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Arun Pandhi</p>
-            <p class="text-white">P-Green Solutions</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Narayanan PV</p>
-            <p class="text-white">Epsilon Carbon</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Shivam Srivastava</p>
-            <p class="text-white">Terviva</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Santosh K Singh</p>
-            <p class="text-white">Intellecap</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Srajesh Gupta</p>
-            <p class="text-white">C-GEM</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Mohana Talapatra</p>
-            <p class="text-white">Talapatra, WWF</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Shitij Singh</p>
-            <p class="text-white">ASQI</p>
-          </div>
-        </div>
-
         <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
         <div class="flex gap-3 px-7 pb-10">
           <img
             class="w-32"
-            src="/assets/images/innovative-finance/collaborators/common-ground.png"
-            alt=""
-          />
-          <img
-            class="w-32"
-            src="/assets/images/innovative-finance/collaborators/vrutti.png"
+            src="/assets/images/grounded-climate/collaborators/si.png"
             alt=""
           />
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
         <p class="">
-          Market access is crucial for the success of Farmer Producer Companies
-          (FPCs) as it directly impacts their ability to be profitable and
-          improve livelihoods for the farmers earn for their members. The
-          existing agricultural value chains and the institutional frameworks
-          restrict the ability of the farmers and the producer companies to
-          receive a fair price for their produce . These legacy based systems
-          thus need to be disrupted to create new institutional frameworks that
-          reduce the risks being borne by the farmers via a commercial entity
-          that is market facing and incentivises the farmers and the producer
-          companies to focus on improving their productivity , implement package
-          of agricultural practises and primary and secondary processing leading
-          to value addition.
+          An engaging exploration of the intricate interconnections within
+          natural systems was provided in this session on climate change.
+          Participants engaged in a systems mapping exercise to understand the
+          complex relationships and impacts of global warming, aiming to
+          identify actionable strategies for change. 
         </p>
         <p class="pt-4">
-          One of the standout case studies was shared by Nirav Khambhati from
-          The Blended Finance Company, which is building a $50 million facility
-          to mobilise commercial working capital for MSMEs in the WASH sector.
-          He explained the challenges these enterprises face when raising debt
-          capital, mainly due to insufficient collateral or lack of lender
-          experience in underwriting for this segment. The discussion further
-          explored the broader ethical questions around the commercialisation of
-          basic needs like health and education.
+            Key takeaways highlighted
+            the lack of education on system dynamics, emphasising that
+            interventions in one area can significantly impact others. The session
+            stressed the importance of developing sustainable solutions that do
+            not create future problems. 
         </p>
         <p class="pt-4">
-          This session delved into the multifaceted challenges hindering the
-          progress of FPCs in the agricultural domain. Participants engaged in
-          insightful conversations focusing on issues such as supply chain
-          inefficiencies, limited bargaining power, and the critical lack of
-          access to formal credit, all of which impede the growth potential of
-          FPCs. The discussions emphasised the urgent need for innovative
-          solutions that place a strong emphasis on bolstering infrastructure,
-          streamlining financial systems, and implementing proactive market
-          access reforms tailored specifically to suit the dynamic needs of
-          FPCs.
+            Participants discovered surprising facts,
+            such as the ocean being the primary source of Earth’s oxygen and the
+            complexities of waste recycling in renewable technologies. The
+            exercise also revealed the interconnectedness of global phenomena,
+            such as how desertification affects the Amazon rainforest and the
+            increased pollen transfer leading to health issues. 
         </p>
         <p class="pt-4">
-          These deliberations underscored the importance of empowering FPCs to
-          navigate the complex agricultural landscape with greater efficiency
-          and resilience.
+            The workshop
+            fostered a sense of community among climate advocates,
+            decision-makers, and curious explorers, all committed to safeguarding
+            the planet. It served as a catalyst for climate action, encouraging
+            dialogue as a tool for fostering knowledge and initiating change. The
+            session concluded with a call to “Go blue to go green,” emphasising
+            the importance of ocean health in achieving sustainability.
         </p>
-        <p class="pt-4">
-          The collaborative efforts within the groups underscored a collective
-          commitment to enhancing governance structures, ensuring financial
-          inclusivity, and fostering sustainable practices within the FPC
-          ecosystem. By advocating for the establishment of a market-oriented
-          federated structure and exploring unconventional strategies such as
-          joint ventures with key buyers, participants aimed to drive FPCs
-          towards greater scalability, market penetration, and sustainability.
-        </p>
-        <p class="pt-4">
-          The overarching narrative from the session highlighted the imperative
-          need for personalised, forward-thinking solutions that prioritise
-          access to vital resources like working capital, market intelligence,
-          and strategic partnerships tailored to the unique requirements of
-          FPCs. This collective approach aimed to catalyse transformative
-          change, enabling FPCs to overcome existing barriers and thrive as key
-          players in the evolving agricultural sector.
-        </p>
+        
       </div>
     </div>
 
-    <!-- Private Financing End -->
+    <!-- Gloabal Warming End -->
+    
+    <!-- Quick Link Start -->
+    <div class="bg-[#222222]">
+      <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
+        <h2 class="text-white text-lg font-semibold tracking-wide mb-6">
+          QUICK LINKS
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 items-end">
+          <a
+            href="/executive-summary.html"
+            class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Executive Summary</span>
+            <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/keynote-speeches.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Keynote Speeches</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/csi-awards.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>CSI Awards</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/echos-of-earth.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Performances and Cultural Expressions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/wicked-solutions.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Wicked Solutions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/human-library-and-story-telling.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Human Library and Storytelling</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/film-showcase.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Film Showcase</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="#"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Exhibitions and Photography</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/coalition-launches-and-partnerships.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Coalition Launches & Partnerships</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <br />
+          <p class="text-white lg:text-md text-lg flex items-center">Event Themes:</p>
+          <a
+            href="/innovative-finance.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Innovative Finance</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/implementation-fidelity-and-quality.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Implementation Fidelity and Quality</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/grounded-climate-response.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Grounded Climate Response</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Quick Links End -->
 
     <script>
       function toggleMenu() {
@@ -1407,6 +1151,19 @@
       });
 
       window.addEventListener("resize", updateCarousel); // Ensure proper resizing behavior
+
+
+
+      // for mobie dropdown
+      document.getElementById('dropdownButton').addEventListener('click', function () {
+        document.getElementById('dropdownMenu').classList.toggle('hidden');
+      });
+      
+      document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+          document.getElementById('dropdownMenu').classList.add('hidden');
+        });
+      });
     </script>
   </body>
 </html>

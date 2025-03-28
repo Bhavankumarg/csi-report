@@ -11,11 +11,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!-- Include Swiper.js -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body class="bg-white">
     <nav class="bg-white shadow-md py-4 px-6">
@@ -202,14 +202,16 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             class="w-full object-cover"
           />
           <div class="absolute lg:bottom-3 bottom-0 w-full p-2">
-            <h2 class="text-white lg:text-4xl text-2xl text-center">Event Highlights</h2>
+            <h2 class="text-white lg:text-4xl text-2xl text-center">
+              Event Highlights
+            </h2>
           </div>
         </div>
       </div>
     </div>
     <!-- Banner End -->
     <!-- Sticky Tabs -->
-    <div class="sticky top-0 bg-[#EDE2F4] shadow-md absolute z-10">
+    <div class="sticky top-0 bg-[#EDE2F4] shadow-md absolute z-20">
       <div id="tabs" class="flex overflow-x-auto">
         <a
           href="#story-telling"
@@ -247,14 +249,16 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       <!-- Story Telling Start -->
       <div class="">
         <div class="lg:py-12">
-          <h2 class="lg:text-5xl text-2xl text-center mb-8 text-[#7E3F98] pt-10">
+          <h2
+            class="lg:text-5xl text-2xl text-center mb-8 text-[#7E3F98] pt-10"
+          >
             Story Telling
           </h2>
 
           <!-- Tabs -->
           <div class="lg:flex justify-center space-x-4 relative items-center">
             <button
-              class="relative bg-[#F5D47B] border border-[#F5D47B] text-black border px-6 py-2 focus:outline-none theme-tab active"
+              class="relative bg-[#F5D47B] border border-[#F5D47B] text-black border px-6 mx-4 py-2 focus:outline-none theme-tab active"
               onclick="changeTab(event, 'human')"
             >
               Human Library
@@ -290,7 +294,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
               collection of people who have and continue to create immense
               impact in their communities.
             </p>
-            <p class="mt-4 container mx-auto lg:w-[55%] px-8 lg:text-xl">
+            <p
+              class="mt-4 container mx-auto lg:w-[55%] px-8 lg:text-xl lg:pb-0 pb-10"
+            >
               In this setup, eight people became open books and shared their
               fascinating chapters of triumph, adversity, and resilience.
             </p>
@@ -329,7 +335,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
               vulnerabilities like gender-based violence, discrimination,
               climate change and occupational safety were emphasised.
             </p>
-            <p class="mt-4 container mx-auto lg:w-[55%] px-8 lg:text-xl">
+            <p
+              class="mt-4 container mx-auto lg:w-[55%] px-8 lg:text-xl lg:pb-0 pb-10"
+            >
               The discussions underscored the complex interplay of economic,
               social, and environmental factors influencing the workforce,
               calling for a more human-centric approach to business and
@@ -347,95 +355,214 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       <!-- Story Telling End -->
     </section>
     <!-- Learning Start -->
-    <section
-      id="learning-corridor"
-      class="section"
-    >
-    <div class="bg-[url('/assets/images/human-library/bg-image-road.svg')] h-screen flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center p-6 relative z-10">
-      <!-- Decorative Side Icons -->
-      <div class="absolute top-0 left-0">
-          <img src="/assets/images/human-library/left-icon.svg" alt="Left Decoration" class="w-28">
-      </div>
-      <div class="absolute top-0 right-0">
-          <img src="/assets/images/human-library/right-icon.svg" alt="Right Decoration" class="w-28">
-      </div>
-  
-      <!-- Learning Corridor Section -->
-      <div class="relative w-full">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Item 1 -->
-            <div class="swiper-slide flex flex-col items-center container mx-aut">
-              <div class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md">
-                <img src="/assets/images/csi-logo.png" alt="Social Innovation Studio" class="w-28" />
-                <p class="text-sm p-3 text-center text-black hover:text-white">A Flight Against Malnutrition</p>
+    <section id="learning-corridor" class="section relative z-10">
+      <div
+        class="bg-[url('/assets/images/human-library/bg-image-road.svg')] flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center p-6"
+      >
+        <!-- Decorative Side Icons -->
+        <div class="absolute top-0 left-0">
+          <img
+            src="/assets/images/human-library/left-icon.svg"
+            alt="Left Decoration"
+            class="w-28"
+          />
+        </div>
+        <div class="absolute top-0 right-0">
+          <img
+            src="/assets/images/human-library/right-icon.svg"
+            alt="Right Decoration"
+            class="w-28"
+          />
+        </div>
+
+        <!-- Learning Corridor Section -->
+        <div class="relative w-full max-w-6xl pt-32">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper flex">
+              <!-- Reduced gap -->
+
+              <!-- Item 1 -->
+              <div class="swiper-slide flex flex-col items-center">
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/pulwari.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-10"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100"
+                  >
+                    Pulwari & Flight Against Malnutrition
+                  </p>
+                </div>
               </div>
-              <p class="mt-2 text-center text-sm">Social Innovation Studio</p>
-            </div>
-            
-            <!-- Item 2 -->
-            <div class="swiper-slide flex flex-col items-center">
-              <div class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md">
-                <img src="/assets/images/csi-logo.png" alt="Pulwari" class="w-28" />
-                <p class="text-sm p-3 text-center text-black hover:text-white">Pulwari & Flight Against Malnutrition</p>
+              <!-- ITEM 2 -->
+              <div
+                class="swiper-slide flex flex-col items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/cms-swasti.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-14"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100 group-hover:p-2"
+                  >
+                    Democratising Data Driven Decision Making to Drive Positive
+                    Change
+                  </p>
+                </div>
               </div>
-              <p class="mt-2 text-center text-sm">Pulwari & Flight Against Malnutrition</p>
-            </div>
-            <div class="swiper-slide flex flex-col items-center container mx-auto">
-              <div class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md">
-                <img src="/assets/images/csi-logo.png" alt="Social Innovation Studio" class="w-28" />
-                <p class="text-sm p-3 text-center text-black hover:text-white">A Flight Against Malnutrition</p>
+              <!-- ITEM 3 -->
+              <div class="swiper-slide flex flex-col items-center">
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/sis.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-10"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100 group-hover:p-1"
+                  >
+                    Community Driven Ecosystem Solutions
+                  </p>
+                </div>
               </div>
-              <p class="mt-2 text-center text-sm">Social Innovation Studio</p>
-            </div>
-            
-            <!-- Item 2 -->
-            <div class="swiper-slide flex flex-col items-center">
-              <div class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md">
-                <img src="/assets/images/csi-logo.png" alt="Pulwari" class="w-28" />
-                <p class="text-sm p-3 text-center text-black hover:text-white">Pulwari & Flight Against Malnutrition</p>
+              <!-- ITEM 4 -->
+              <div
+                class="swiper-slide flex flex-col items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/cg.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-6"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100"
+                  >
+                    Catalyst Group
+                  </p>
+                </div>
               </div>
-              <p class="mt-2 text-center text-sm">Pulwari & Flight Against Malnutrition</p>
+              <!-- ITEM 5 -->
+              <div
+                class="swiper-slide flex flex-col items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/fuzhio.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-14"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100 group-hover:p-2"
+                  >
+                    The Community Engagement Catalyst
+                  </p>
+                </div>
+              </div>
+              <!-- ITEM 6 -->
+              <div
+                class="swiper-slide flex flex-col items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/swasti.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-6"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100 group-hover:p-2"
+                  >
+                    A Health Catalyst
+                  </p>
+                </div>
+              </div>
+              <!-- ITEM 7 -->
+              <div
+                class="swiper-slide flex flex-col items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 bg-white hover:bg-[#7F4197] transition rounded-full flex flex-col justify-center items-center border shadow-md relative group"
+                >
+                  <img
+                    src="/assets/images/human-library/collaborators/cac.png"
+                    alt="Pulwari"
+                    class="w-24 group-hover:hidden mt-14"
+                  />
+                  <p
+                    class="text-sm text-center opacity-0 text-black group-hover:text-white group-hover:opacity-100 group-hover:p-2"
+                  >
+                    humanitarian emergency platform that builds the resilience
+                    of Vulnerable People
+                  </p>
+                </div>
+              </div>
             </div>
-      
-            <!-- Add remaining items similarly -->
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next text-[#7F4197]"></div>
+            <div class="swiper-button-prev text-[#7F4197]"></div>
           </div>
-          <!-- Navigation Buttons -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Curved Text -->
+        <div
+          class="relative w-full flex flex-col items-center justify-end mt-60 z-10 py-10"
+        >
+          <svg width="300" height="80">
+            <path id="curve" d="M10,70 Q150,10 290,70" fill="transparent" />
+            <text class="fill-[#7F4197] text-4xl">
+              <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                Learning Corridor
+              </textPath>
+            </text>
+          </svg>
+          <p class="text-2xl text-center pt-4">
+            The Knowledge Corridor had displays and information on
+          </p>
         </div>
       </div>
-  
-      <!-- Learning Corridor Title -->
-      <div class="text-center mt-60">
-          <h2 class="text-5xl text-[#7F4197]">Learning Corridor</h2>
-          <p class="text-sm text-gray-700">The Knowledge Corridor had displays and information on</p>
-      </div>
     </section>
+
     <section
       id="fueling-growth"
       class="section lg:flex items-center justify-center"
     >
       <!-- GROWTH Section Start -->
-      <div class="bg-[#F9F2D7] absolute w-full relative">
+      <div class="bg-[#F9F2D7] absolute w-full relative pb-20">
         <div class="p-4">
           <div class="">
             <div class="lg:py-12">
-              <h2 class="lg:text-5xl text-2xl text-center mb-8 text-[#7E3F98] lg:py-10 py-4">
+              <h2
+                class="lg:text-5xl text-2xl text-center mb-8 text-[#7E3F98] lg:py-10 py-4"
+              >
                 Fueling Growth
               </h2>
-              <div class="container max-w-5xl mx-auto">
+              <div class="container lg:max-w-5xl mx-auto">
                 <!-- Tab Buttons -->
                 <div class="lg:flex">
                   <button
-                    class="tab-button px-4 py-2 text-gray-700 rounded-t-lg focus:outline-none"
+                    class="tab-button px-4 py-2 text-gray-700 rounded-t-lg focus:outline-none w-80"
                     data-tab="tab1"
                     style="background-color: #ede2f4"
                   >
                     Ask Me anything about CBCI
                   </button>
                   <button
-                    class="tab-button px-4 py-2 text-gray-700 rounded-t-lg focus:outline-none"
+                    class="tab-button px-4 py-2 text-gray-700 rounded-t-lg focus:outline-none w-80"
                     data-tab="tab2"
                     style="background-color: #ede2f4"
                   >
@@ -556,7 +683,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       </div>
       <!-- GROWTH Section End -->
     </section>
-    
+
     <section
       id="wicked-solutions"
       class="section lg:flex justify-center items-center bg-[#7F4197] text-white"
@@ -590,11 +717,13 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       </div>
     </section>
     <section
-    id="health-screening"
+      id="health-screening"
       class="section lg:flex justify-center items-center bg-[#7F4197] text-white"
     >
       <div class="lg:px-10 px-5 max-w-3xl">
-        <h3 class="text-[#F5D47B] lg:text-4xl text-2xl py-5">Health Screening</h3>
+        <h3 class="text-[#F5D47B] lg:text-4xl text-2xl py-5">
+          Health Screening
+        </h3>
         <p class="lg:pt-5 lg:text-lg lg:pe-32">
           The public health communication showcase at CSI 2024 featured a
           diverse array of impactful films and discussions centred on key themes
@@ -618,6 +747,103 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       </div>
     </section>
 
+    <!-- Quick Link Start -->
+    <div class="bg-[#222222]">
+      <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
+        <h2 class="text-white text-lg font-semibold tracking-wide mb-6">
+          QUICK LINKS
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 items-end">
+          <a
+            href="/executive-summary.html"
+            class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Executive Summary</span>
+            <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/keynote-speeches.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Keynote Speeches</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/csi-awards.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>CSI Awards</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/echos-of-earth.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Performances and Cultural Expressions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/wicked-solutions.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Wicked Solutions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/human-library-and-story-telling.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Human Library and Storytelling</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/film-showcase.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Film Showcase</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="#"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Exhibitions and Photography</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/coalition-launches-and-partnerships.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Coalition Launches & Partnerships</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <br />
+          <p class="text-white lg:text-md text-lg flex items-center">Event Themes:</p>
+          <a
+            href="/innovative-finance.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Innovative Finance</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/implementation-fidelity-and-quality.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Implementation Fidelity and Quality</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/grounded-climate-response.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Grounded Climate Response</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Quick Links End -->
     <script>
       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
@@ -718,19 +944,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 
       // slider
       var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      1024: { slidesPerView: 4 },
-    },
-  });
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        },
+      });
     </script>
   </body>
 </html>

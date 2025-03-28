@@ -197,63 +197,48 @@
         <div
           class="bg-[#7E3F98] text-white text-center py-6 px-4 lg:max-w-5xl w-full"
         >
-          <h2 class="text-4xl font-semibold text-[#F5D47B] py-5">
-            Implementation Fidelity and Quality
+          <h2 class="text-2xl lg:text-4xl font-semibold text-[#F5D47B] py-5">
+            Innovative Finance
           </h2>
           <p class="text-xl mt-2 max-w-3xl mx-auto pb-3">
-            The theme of implementation and quality and fidelity in the CSI
-            sessions focused on connecting, solving, and catalysing social
-            impact initiatives.
+            The theme of innovative finance emerged as a powerful catalyst for transformation in the social sector.
           </p>
         </div>
       </div>
     </div>
     <!-- Banner End -->
     <!-- Sticky Tabs -->
-    <div class="sticky top-0 bg-[#EDE2F4] shadow-md absolute z-10">
-      <div id="tabs" class="flex overflow-x-auto">
-        <a
-          href="#overview"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Overview</a
-        >
-        <a
-          href="#outcome"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Outcome Based Finance</a
-        >
-        <a
-          href="#micro-equity"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Micro-equity</a
-        >
-        <a
-          href="#pioneering"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Pioneering the Future</a
-        >
-        <a
-          href="#unblocking"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Unblocking Blended Finance</a
-        >
-        <a
-          href="#market-access"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Market Access</a
-        >
-        <a
-          href="#private-financing"
-          class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white"
-          >Private Financing</a
-        >
+    <div class="sticky top-0 bg-[#EDE2F4] shadow-md z-10">
+      <!-- Desktop View -->
+      <div id="tabs" class="hidden md:flex overflow-x-auto">
+        <a href="#overview" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Overview</a>
+        <a href="#outcome" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Outcome Based Finance</a>
+        <a href="#micro-equity" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Micro-equity</a>
+        <a href="#pioneering" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Pioneering the Future</a>
+        <a href="#unblocking" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Unblocking Blended Finance</a>
+        <a href="#market-access" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Market Access</a>
+        <a href="#private-financing" class="tab-link px-6 py-5 text-black hover:bg-[#7E3F98] hover:text-white">Private Financing</a>
+      </div>
+      
+      <!-- Mobile Dropdown -->
+      <div class="md:hidden relative">
+        <button id="dropdownButton" class="w-full py-4 bg-[#7E3F98] text-white text-center">Select Section <i class="fa-solid fa-chevron-down"></i></button>
+        <ul id="dropdownMenu" class="hidden absolute w-full bg-white shadow-lg">
+          <li><a href="#overview" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Overview</a></li>
+          <li><a href="#outcome" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Outcome Based Finance</a></li>
+          <li><a href="#micro-equity" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Micro-equity</a></li>
+          <li><a href="#pioneering" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Pioneering the Future</a></li>
+          <li><a href="#unblocking" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Unblocking Blended Finance</a></li>
+          <li><a href="#market-access" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Market Access</a></li>
+          <li><a href="#private-financing" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Private Financing</a></li>
+        </ul>
       </div>
     </div>
-
+  
     <!-- Content Sections -->
-    <div class="relative" id="overview">
-      <div class="max-w-6xl mx-auto container flex flex-col items-center py-20">
-        <h2 class="text-center text-gray-700 text-2xl mb-6 lg:w-[90%]">
+    <div class="relative lg:p-0 p-5" id="overview">
+      <div class="max-w-6xl mx-auto container flex flex-col items-center lg:py-20 py-10">
+        <h2 class="text-center text-gray-700 text-xl lg:text-2xl mb-6 lg:w-[90%]">
           The sessions highlighted the changing landscape of social impact
           funding, with traditional mechanisms giving way to innovative
           approaches. Participants explored avenues such as
@@ -370,7 +355,7 @@
       <!-- Bottom Left Decorative Icon -->
       <div class="absolute bottom-0 left-0 flex justify-center items-center">
         <img
-          class="w-40"
+          class="lg:w-40 lg:h-40 w-24 h-20"
           src="/assets/images/innovative-finance/bottom-left-icon.svg"
           alt=""
         />
@@ -378,7 +363,7 @@
       <!-- Bottom Right Decorative Icon -->
       <div class="absolute bottom-0 right-0 flex justify-center items-center">
         <img
-          class="w-40"
+          class="lg:w-40 lg:h-40 w-24 h-20"
           src="/assets/images/innovative-finance/bottom-right-icon.svg"
           alt=""
         />
@@ -393,10 +378,10 @@
     </div>
 
     <section id="outcome">
-      <div class="lg:flex items-center justify-center bg-[#904DAC] space-x-24">
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">01.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+      <div class="lg:flex items-center justify-center bg-[#904DAC] lg:space-x-24">
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">01.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
             Demystifying Outcome Based Finance (OBF)
           </p>
         </div>
@@ -406,7 +391,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
@@ -486,7 +471,7 @@
         </h3>
         <h3 class="text-lg text-white p-3 px-7 pb-10">Collaborator: BAT</h3>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
         <p class="">
           The session on Outcome-Based Financing (OBF) at the CSI event
           illuminated its transformative potential in the social sector’s
@@ -536,11 +521,11 @@
     <!-- Micro Equity Section Start -->
     <section
       id="micro-equity"
-      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-14"
     >
-      <div class="max-w-2xl">
-        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">02.</h3>
-        <p class="text-white text-2xl pt-3 px-20">
+      <div class="max-w-2xl lg:p-0 p-5">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">02.</h3>
+        <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10">
           Micro-equity: Boosting Growth for Micro and Nano Entrepreneurs
         </p>
       </div>
@@ -549,7 +534,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
 
         <div class="flex px-7 items-center gap-3">
@@ -575,7 +560,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="">
           The discussions in the session on Micro-equity: Boosting Growth for
           Micro and Nano Entrepreneurs centred around the significant challenges
@@ -632,11 +617,11 @@
     <!-- Poineering Start -->
     <section id="pioneering">
       <div
-        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">03.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">03.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
             <b>Pioneering the Future:</b> Accelerating Implementation and
             Shaping Policy for the Social Stock Exchange (SSE)
           </p>
@@ -650,24 +635,19 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
+        
           <div>
             <p class="text-[#F5D47B]">Anju Narayanan</p>
-            <p class="text-white">Buzz</p>
           </div>
         </div>
         <h3 class="text-lg text-white p-3 px-7">Panelists:</h3>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/jotsana.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -678,7 +658,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/dummy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -689,7 +669,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/mangesh.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -700,7 +680,7 @@
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/dummy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -713,7 +693,7 @@
 
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/workshop-facilitators/vivek.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -727,7 +707,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/dummy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -740,7 +720,7 @@
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/dummy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -754,19 +734,20 @@
         </h3>
         <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
         <div class="flex gap-3 px-7 pb-10">
-          <img
-            class="w-32"
-            src="/assets/images/innovative-finance/collaborators/catalyst.png"
-            alt=""
-          />
+          
           <img
             class="w-32"
             src="/assets/images/innovative-finance/collaborators/icmai.png"
             alt=""
           />
+          <img
+            class="w-32"
+            src="/assets/images/innovative-finance/collaborators/catalyst.png"
+            alt=""
+          />
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="">
           The session focused on exploring how the SSE can revolutionise funding
           for India’s social sector. The main objectives were to discuss the
@@ -822,42 +803,37 @@
     <!-- Unblocking Start -->
     <section id="unblocking">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">04.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">04.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
             <b>Unblocking Blended Finance: </b> Philanthropic Capital Solutions
             for Commercial Social Ventures
           </p>
         </div>
         <div>
           <img
-            src="/assets/images/innovative-finance/poineering-banner.png"
+            src="/assets/images/innovative-finance/unblocking-banner.png"
             alt=""
           />
         </div>
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
-            class="w-20 mb-3"
-            alt=""
-          />
+          
           <div>
             <p class="text-[#F5D47B]">Purnima J</p>
-            <p class="text-white">Buzz</p>
           </div>
         </div>
         <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/speakers/anita.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -868,7 +844,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/speakers/ritesh.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -879,7 +855,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/speakers/nirav.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -890,7 +866,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/speakers/samheeta.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -901,7 +877,7 @@
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/speakers/prabhir.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -918,7 +894,7 @@
           Collaborator: Gamechanger Law, Waterfield,
         </h3>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="font-semibold text-lg">
           The examination of blended finance focused on how it can bridge the
           gap between social impact and financial returns, especially within
@@ -986,11 +962,11 @@
     <!-- Market Acess Start -->
     <section id="market-access">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
       >
-        <div class="">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">05.</h3>
-          <p class="text-white text-2xl pt-3 px-20 w-96">
+        <div class="lg:p-0 p-5">
+          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">05.</h3>
+          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
             Market Access for Farmer Producer Companies (FPCs)
           </p>
         </div>
@@ -1003,12 +979,12 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
+            src="/assets/images/innovative-finance/faciliatorr/shrish.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1021,7 +997,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/uthara.png"
+            src="/assets/images/innovative-finance/faciliatorr/shambu.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1033,7 +1009,7 @@
 
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/faciliatorr/hs-vis.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1044,7 +1020,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/faciliatorr/cs-reddy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1055,7 +1031,7 @@
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/faciliatorr/partha-sarathy.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1077,7 +1053,7 @@
         <h3 class="text-lg text-white px-7">Mr Pramel</h3>
         <h3 class="text-lg text-white pb-5 px-7">Mr Amit Malhotra</h3>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="">
           Market access is crucial for the success of Farmer Producer Companies
           (FPCs) as it directly impacts their ability to be profitable and
@@ -1144,11 +1120,11 @@
     <!-- Private Financing Start -->
     <section
       id="private-financing"
-      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 space-x-24"
+      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
     >
-      <div class="">
-        <h3 class="text-3xl text-[#F5D47B] #7E3F98 px-20">06.</h3>
-        <p class="text-white text-2xl pt-3 px-20 w-96">
+      <div class="lg:p-0 p-5">
+        <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">06.</h3>
+        <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
           Private Financing for Decarbonization: Community-Based Ecosystem
           Services for Commons
         </p>
@@ -1158,7 +1134,7 @@
       </div>
     </section>
     <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="w-[50%]">
+      <div class="lg:w-[50%]">
         <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
 
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
@@ -1177,7 +1153,7 @@
         <h3 class="text-lg text-white p-3 px-7">Panelists:</h3>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/vijay.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1188,7 +1164,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/arun.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1199,7 +1175,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/narayanan.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1210,7 +1186,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/shivam.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1221,7 +1197,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/santhosh.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1232,7 +1208,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/srajesh.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1243,7 +1219,7 @@
         </div>
         <div class="flex px-7 items-center gap-3">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/mohana.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1254,7 +1230,7 @@
         </div>
         <div class="flex px-7 items-center gap-3 border-b border-dotted">
           <img
-            src="/assets/images/innovative-finance/speakers/mallika.png"
+            src="/assets/images/innovative-finance/panelists/shitji.png"
             class="w-20 mb-3"
             alt=""
           />
@@ -1278,7 +1254,7 @@
           />
         </div>
       </div>
-      <div class="bg-[#EDE2F4] p-10 w-[100%] text-lg">
+      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
         <p class="">
           Market access is crucial for the success of Farmer Producer Companies
           (FPCs) as it directly impacts their ability to be profitable and
@@ -1342,7 +1318,104 @@
     </div>
 
     <!-- Private Financing End -->
-
+ 
+    <!-- Quick Link Start -->
+    <div class="bg-[#222222]">
+      <div class="w-full max-w-4xl text-center px-4 container mx-auto py-16">
+        <h2 class="text-white text-lg font-semibold tracking-wide mb-6">
+          QUICK LINKS
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 items-end">
+          <a
+            href="/executive-summary.html"
+            class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Executive Summary</span>
+            <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/keynote-speeches.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Keynote Speeches</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/csi-awards.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>CSI Awards</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/echos-of-earth.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Performances and Cultural Expressions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/wicked-solutions.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Wicked Solutions</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/human-library-and-story-telling.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Human Library and Storytelling</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/film-showcase.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Film Showcase</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="#"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Exhibitions and Photography</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/coalition-launches-and-partnerships.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Coalition Launches & Partnerships</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <br />
+          <p class="text-white lg:text-md text-lg flex items-center">Event Themes:</p>
+          <a
+            href="/innovative-finance.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Innovative Finance</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/implementation-fidelity-and-quality.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Implementation Fidelity and Quality</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+          <a
+            href="/grounded-climate-response.html"
+            class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          >
+            <span>Grounded Climate Response</span>
+             <span class="text-yellow-400 group-hover:text-[#7F4197]"><i class="fas fa-arrow-right -rotate-45"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Quick Links End -->
     <script>
       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
@@ -1473,6 +1546,17 @@
       });
 
       window.addEventListener("resize", updateCarousel); // Ensure proper resizing behavior
+
+      // for mobile dropdown sticku tab
+      document.getElementById('dropdownButton').addEventListener('click', function () {
+        document.getElementById('dropdownMenu').classList.toggle('hidden');
+      });
+      
+      document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+          document.getElementById('dropdownMenu').classList.add('hidden');
+        });
+      });
     </script>
   </body>
 </html>
