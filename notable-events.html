@@ -109,9 +109,13 @@
           >Coalition Launches & Partnerships</a
         >
       </div>
-      <button class="md:hidden text-black text-5xl" onclick="toggleMenu()">
-        ☰
-      </button>
+      <button
+      id="menuToggle"
+      class="md:hidden text-[#7E3F98] font-bold text-3xl"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
     </div>
     <!-- Mobile Menu inside the container -->
     <div class="container mx-auto">
@@ -212,7 +216,7 @@
             alt="CSI awards"
             class="w-full object-cover"
           />
-          <div class="absolute lg:bottom-10 bottom-1 w-full p-2">
+          <div class="absolute lg:bottom-10 bottom-0 w-full p-2">
             <h2 class="text-white lg:text-5xl font-semibold text-2xl text-center">
               Notable Events
             </h2>
@@ -234,13 +238,13 @@
       
       <!-- Mobile Dropdown -->
       <div class="md:hidden relative">
-        <button id="dropdownButton" class="w-full py-4 bg-[#7E3F98] text-white text-center">Select Section <i class="fa-solid fa-chevron-down"></i></button>
-        <ul id="dropdownMenu" class="hidden absolute w-full bg-white shadow-lg">
-          <li><a href="#story-telling" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Story Telling</a></li>
-          <li><a href="#learning-corridor" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Learning Corridor</a></li>
-          <li><a href="#fueling-growth" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Fueling Growth</a></li>
-          <li><a href="#health-screening" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Health Screening</a></li>
-          <li><a href="#wicked-solutions" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Wicked Solutions</a></li>
+        <button id="dropdownButton" class="w-full py-4 bg-[#904CAC] text-white text-center border border-gray-400">Select Section <i class="fa-solid fa-chevron-down"></i></button>
+        <ul id="dropdownMenu" class="hidden absolute w-full bg-white shadow-lg text-center">
+          <li><a href="#story-telling" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]  border-[#7E3F98] border-b">Story Telling</a></li>
+          <li><a href="#learning-corridor" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]  border-[#7E3F98] border-b">Learning Corridor</a></li>
+          <li><a href="#fueling-growth" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]  border-[#7E3F98] border-b">Fueling Growth</a></li>
+          <li><a href="#health-screening" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]  border-[#7E3F98] border-b">Health Screening</a></li>
+          <li><a href="#wicked-solutions" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]  border-[#7E3F98] border-b">Wicked Solutions</a></li>
         </ul>
       </div>
     </div>
@@ -559,7 +563,7 @@
               </h2>
               <div class="container lg:max-w-5xl mx-auto">
                 <!-- Tab Buttons -->
-                <div class="lg:flex">
+                <div class="flex gap-2">
                   <button
                     class="tab-button px-4 py-2 text-gray-700 rounded-t-lg focus:outline-none w-80"
                     data-tab="tab1"
@@ -715,7 +719,7 @@
           incomplete, and contradictory. Times like this call for solutions that
           are cooperative, creative and adaptable.
         </p>
-        <p class="py-4 text-lg mt-4">
+        <p class="pt-5 pb-10 lg:pb-0 text-lg mt-4">
           <a class="text-[#F5D47B] text-lg hover:bg-[#DDDDDD] hover:text-[#7F4197] transition-all duration-300 border rounded-full p-3" href="/wicked-solutions.html"
             >KNOW MORE <i class="fas fa-arrow-right"></i
           ></a>
@@ -724,8 +728,16 @@
     </section>
     <section
       id="health-screening"
-      class="section lg:flex justify-center items-center bg-[#7F4197] text-white"
+      class="section lg:flex md:flex-row-reverse justify-center items-center bg-[#7F4197] text-white"
     >
+     
+      <div>
+        <img
+          class="pt-6 lg:p-0 p-5"
+          src="/assets/images/human-library/health-screening.png"
+          alt=""
+        />
+      </div>
       <div class="lg:px-10 px-5 max-w-3xl">
         <h3 class="text-[#F5D47B] lg:text-4xl text-2xl py-5">
           Health Screening
@@ -738,18 +750,11 @@
           ethical considerations, focusing on authenticity, respect, and
           community representation in storytelling.
         </p>
-        <p class="pt-4 text-lg mt-4">
+        <p class="pt-5 pb-10 lg:pb-0 text-lg mt-4">
           <a class="text-[#F5D47B] text-lg hover:bg-[#DDDDDD] hover:text-[#7F4197] transition-all duration-300 border rounded-full p-3" href="/film-showcase.html"
             >KNOW MORE <i class="fas fa-arrow-right"></i
           ></a>
         </p>
-      </div>
-      <div>
-        <img
-          class="pt-6 lg:p-0 p-5"
-          src="/assets/images/human-library/health-screening.png"
-          alt=""
-        />
       </div>
     </section>
 
@@ -877,13 +882,32 @@
     </div>
     <!-- Quick Links End -->
     <script>
+      // for mobile menu
       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
+        const button = document.getElementById("menuToggle");
+
         menu.classList.toggle("hidden");
+
+        // Change icon based on menu state
+        if (menu.classList.contains("hidden")) {
+          button.innerHTML = "☰"; // Menu open icon
+        } else {
+          button.innerHTML = "x"; // Close (X) icon
+        }
       }
+      // for Header dropdown
       function toggleDropdown(id) {
-        const dropdown = document.getElementById(id);
-        dropdown.classList.toggle("hidden");
+        const content = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.classList.remove("rotate-180");
+        }
       }
       // Smooth scroll behavior
       document.querySelectorAll(".tab-link").forEach((anchor) => {

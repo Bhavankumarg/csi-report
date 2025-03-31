@@ -103,9 +103,13 @@
           >Coalition Launches & Partnerships</a
         >
       </div>
-      <button class="md:hidden text-black text-5xl" onclick="toggleMenu()">
-        ☰
-      </button>
+      <button
+      id="menuToggle"
+      class="md:hidden text-[#7E3F98] font-bold text-3xl"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
     </div>
     <!-- Mobile Menu inside the container -->
     <div class="container mx-auto">
@@ -388,14 +392,32 @@
   </div>
   <!-- Quick Links End -->
     <script>
-      // for mobile menu
-      function toggleMenu() {
+       // for mobile menu
+       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
+        const button = document.getElementById("menuToggle");
+
         menu.classList.toggle("hidden");
+
+        // Change icon based on menu state
+        if (menu.classList.contains("hidden")) {
+          button.innerHTML = "☰"; // Menu open icon
+        } else {
+          button.innerHTML = "x"; // Close (X) icon
+        }
       }
+      // for Header dropdown
       function toggleDropdown(id) {
-        const dropdown = document.getElementById(id);
-        dropdown.classList.toggle("hidden");
+        const content = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.classList.remove("rotate-180");
+        }
       }
     </script>
   </body>
