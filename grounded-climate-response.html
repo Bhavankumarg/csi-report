@@ -207,10 +207,10 @@
         <div
           class="bg-[#7E3F98] text-white text-center py-6 px-4 lg:max-w-5xl w-full"
         >
-          <h2 class="lg:text-4xl text-2xl font-semibold text-[#F5D47B] py-5">
+          <h2 class="lg:text-4xl text-2xl lg:text-4xl text-[#F5D47B] py-">
             Grounded Climate Response
           </h2>
-          <p class="text-xl mt-2 max-w-3xl mx-auto pb-3">
+          <p class="text-xl mt-2 max-w-3xl mx-auto pt-3">
             The theme of Grounded Climate Response emphasised the critical need
             for urgent action in the face of the undeniable climate crisis
             affecting health, livelihoods, and communities worldwide.
@@ -235,12 +235,12 @@
       <div class="md:hidden relative">
         <button id="dropdownButton" class="w-full py-4 border shadow-xl bg-[#7E3F98] text-white text-center">Select Section <i class="fa-solid fa-chevron-down"></i></button>
         <ul id="dropdownMenu" class="hidden absolute w-full bg-white shadow-lg">
-          <li><a href="#overview" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Overview</a></li>
-          <li><a href="#frightening" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Frightening Future to Nourishing Now</a></li>
-          <li><a href="#youth-led" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Youth-led Food Transformation</a></li>
-          <li><a href="#building-resilience" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Building Resilience</a></li>
-          <li><a href="#integrated-climate" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Integrated Climate and Health Response</a></li>
-          <li><a href="#global-warming" class="dropdown-item block px-6 py-3 hover:bg-[#EDE2F4]">Global Warming</a></li>
+          <li><a href="#overview" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Overview</a></li>
+          <li><a href="#frightening" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Frightening Future to Nourishing Now</a></li>
+          <li><a href="#youth-led" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Youth-led Food Transformation</a></li>
+          <li><a href="#building-resilience" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Building Resilience</a></li>
+          <li><a href="#integrated-climate" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Integrated Climate and Health Response</a></li>
+          <li><a href="#global-warming" class="dropdown-item block px-6 py-3 hover:bg-[#7E3F98] border-b border-[#7E3F98]">Global Warming</a></li>
         </ul>
       </div>
     </div>
@@ -274,52 +274,41 @@
         </p>
       </div>
       <!-- Slider Start -->
-      <div class="bg-white items-center justify-center container mx-auto">
-        <div class="relative w-full overflow-hidden">
-          <div id="carouselWrapper" class="w-full overflow-hidden">
-            <div
-              id="carousel"
-              class="flex transition-transform duration-500 space-x-4"
-            >
+      <div class="bg-white flex justify-center items-center lg:px-32">
+        <div class="relative w-full max-w-screen-lg overflow-hidden">
+          <div id="carouselWrapper" class="w-full overflow-hidden flex">
+            <div id="carousel" class="flex transition-transform duration-500 lg:space-x-7">
               <img
                 src="/assets/images/grounded-climate/img-silder-001.png"
                 alt="Speaker"
-                class="w-full sm:w-1/3 object-cover"
+                class="w-full md:w-80 object-cover"
               />
               <img
                 src="/assets/images/grounded-climate/img-silder-002.png"
                 alt="Audience"
-                class="w-full sm:w-1/3 object-cover"
+                class="w-full md:w-80 object-cover"
               />
               <img
                 src="/assets/images/grounded-climate/img-silder-003.png"
                 alt="Discussion"
-                class="w-full sm:w-1/3 object-cover"
+                class="w-full md:w-80 object-cover"
               />
-              <!-- <img src="/assets/images/innovative-finance/slider/slider-img-04.png" alt="Panel" class="w-full sm:w-1/3 object-cover" /> -->
-              <!-- <img src="/assets/images/innovative-finance/slider/slider-img-05.png" alt="Networking" class="w-full sm:w-1/3 object-cover" /> -->
             </div>
           </div>
-
+      
           <!-- Navigation Buttons -->
-          <div class="flex justify-center items-center gap-3 lg:py-10 py-5">
-            <button
-              id="prev"
-              class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md"
-            >
+          <div class="flex justify-center items-center gap-3 lg:py-10 py-5 lg:hidden">
+            <button id="prev" class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md">
               <i class="fas fa-arrow-left"></i>
             </button>
-            <button
-              id="next"
-              class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md"
-            >
+            <button id="next" class="bg-[#E1CFED] w-10 h-10 rounded-full shadow-md">
               <i class="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
       </div>
       <!-- Slider End -->
-      <div class="max-w-6xl mx-auto container flex flex-col items-center">
+      <div class="max-w-6xl mx-auto container flex flex-col items-center lg:pt-10 pt-5">
         <p class="text-star text-gray-700 text-lg mb-6 lg:w-[90%]">
           Funding was recognised as a crucial enabler for implementing climate
           solutions, with a specific focus on the need for government support,
@@ -379,473 +368,514 @@
       </section>
     </div>
 
+    <!-- frightening Start -->
+
     <section id="frightening">
-      <div class="lg:flex items-center justify-center bg-[#904DAC] lg:space-x-24">
-        <div class="w-full max-w-sm lg:p-0 p-5">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">01.</h3>
-          <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10 lg:w-96">
-            Frightening Future to Nourishing Now
+      <div
+        class="lg:flex items-center justify-center bg-[#904DAC]"
+      >
+        <div class="flex flex-col lg:flex-row w-full min-h-">
+          <!-- Left Section -->
+          <div class="bg-[#904CAC] text-white lg:w-1/3 p-8 flex items-center">
+              <div>
+                <h2 class="text-4xl font-bold text-[#F5D47B] lg:px-10">01.</h2>
+                  <h1 class="text-2xl lg:text-4xl mt-4 lg:px-10"> Frightening Future to Nourishing Now</h1>
+              </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="lg:w-2/3 flex justify-center items-center w-full">
+              <img src="/assets/images/grounded-climate/frightnening-banner.png" alt="Panel Discussion" class="w-full h-auto shadow-lg">
+          </div>
+      </div>
+      </div>
+    </section>
+    <div class="lg: justify-center bg-[#7E3F98]">
+      <div class="lg:flex ">
+        <!-- Left Section -->
+        <div class="bg-[#7E3E97] text-white lg:w-1/3 p-8 flex items-start">
+          <div class="">
+            <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+        
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/ranjan.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Ranjan B</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/gagan.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Gagan Jyot Kaur</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/akshit.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Akshit Jain</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/faciliator/oshin.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Oshin Dhawan</p>
+                <p class="text-white">ComMutiny - The Youth Collective</p>
+              </div>
+            </div>
+        
+            <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+              Format: Interactive Workshop
+            </h3>
+            <h3 class="text-lg text-white p-3 px-7 pb-10">
+              Collaborator: ComMunity, VartaLeap
+            </h3>
+          </div>
+        </div>
+        
+        <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg lg:w-2/3 justify-center items-center w-full">
+          <p class="">
+            Highlighting the importance of moving from fear-driven to hope-driven
+            responses, the discussions during the session emphasised resilience
+            and community-driven action. Participants identified the disconnect
+            between problem areas and where people live as a barrier to urgent
+            action, as it creates a lack of immediacy in addressing climate change
+            issues.
+          </p>
+          <p class="pt-4">
+            The session advocated for nurturing all priority needs, recognizing
+            intersectionalities, and inspiring stakeholders to translate intention
+            into action. The N.O.U.R.I.S.H framework was introduced as a guide to
+            harness hope and agency.
+          </p>
+          <p class="pt-4">
+            N: Nurture all the priority needs together <br />
+            O: Onboard all the other themes by highlighting intersectionalities
+            <br />U: Uncover the hidden layers of mainstream mindset <br />R:
+            Realise short term and long term goals <br />I: Inspire influencers
+            and insiders among all stakeholders to move from intention to actionbr
+            <br />
+            S: Spark seeing, being, and doing together <br />
+            H: Harness hope and agency
+          </p>
+          <p class="pt-4">
+            Youth leaders shared experiences of impactful community engagement
+            through art and environmental education, demonstrating the power of
+            grassroots initiatives.
+          </p>
+          <p class="pt-4">
+            Key challenges discussed included the limited reach of climate
+            resilience efforts to vulnerable populations, high climate-related
+            displacements, and the difficulty of utilising common spaces in
+            densely populated areas. Designing effective local policies and
+            engaging various stakeholders were also noted, highlighting the
+            complexity of systems change.
+          </p>
+          <p class="pt-4">
+            The session underscored the necessity of practical tools and systems
+            that enable individuals to make everyday changes and the role of
+            economic drivers in motivating climate-friendly behaviours.
+          </p>
+          <p class="pt-4">
+            Key takeaways included the need for an integrated approach aligning
+            goals across sectors, understanding community needs, and fostering
+            decentralized planning. The session concluded with a call to action
+            for individuals to embrace minimalistic options and initiate change
+            within themselves, thereby contributing to broader climate priorities.
           </p>
         </div>
-        <div>
-          <img
-            src="/assets/images/grounded-climate/frightnening-banner.png"
-            alt=""
-          />
-        </div>
+    </div>
+      
+     
+    </div>
+    <!-- frightening End -->
+    <!-- Youth Led Start -->
+
+    <section id="youth-led">
+      <div
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10"
+      >
+        <div class="flex flex-col lg:flex-row w-full min-h-">
+          <!-- Left Section -->
+          <div class="bg-[#904CAC] text-white lg:w-1/3 p-8 flex items-center">
+              <div>
+                <h2 class="text-4xl font-bold text-[#F5D47B] lg:px-10">02.</h2>
+                  <h1 class="text-2xl lg:text-4xl mt-4 lg:px-10">Youth-led Food Transformation using Agroecological Modules</h1>
+              </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="lg:w-2/3 flex justify-center items-center w-full">
+              <img src="/assets/images/grounded-climate/youth-led-banner.png" alt="Panel Discussion" class="w-full h-auto shadow-lg">
+          </div>
+      </div>
       </div>
     </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="lg:w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/ranjan.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Ranjan B</p>
+    <div class="lg: justify-center bg-[#7E3F98]">
+      <div class="lg:flex ">
+        <!-- Left Section -->
+        <div class="bg-[#7E3E97] text-white lg:w-1/3 p-8 flex items-start">
+          <div class="">
+            <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+    
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/saloni.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Saloni Goel</p>
+                <p class="text-white">CoMmunity - The Youth Collective</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/deep.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Deepjyoti Sonu Brahma</p>
+                <p class="text-white">Farm2Food Foundation</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/faciliator/gagan.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Gagan Jyot Kaur</p>
+              </div>
+            </div>
+            <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
+    
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/speakers/trish.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Trishnamoni Hazarika</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/speakers/dummy.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Dimpy Dutta</p>
+              </div>
+            </div>
+            <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+              Format: Interactive workshop
+            </h3>
+            <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+            <div class="flex gap-3 px-7 pb-10">
+              <img
+                class="w-32"
+                src="/assets/images/grounded-climate/collaborators/farm.png"
+                alt=""
+              />
+              <img
+                class="w-32"
+                src="/assets/images/grounded-climate/collaborators/community.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/gagan.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Gagan Jyot Kaur</p>
-          </div>
+        
+        <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg lg:w-2/3 justify-center items-center w-full">
+          <p class="">
+            Exploring the pivotal role young people play in transforming food
+            systems, this session emphasised the importance of youth leadership in
+            challenging perceptions that farming is not appealing, addressing
+            urbanisation desires, and countering the risks associated with
+            agriculture.
+          </p>
+  
+          <p class="pt-4">
+            Currently, 1200 youth leaders are actively engaged in agroecology,
+            focusing on understanding diverse food systems and the challenges
+            faced by farmers. A significant barrier identified was the lack of
+            awareness at the grassroots level and the difficulty in marketing
+            organic products. This highlights the need for government support in
+            financial aid and infrastructure development, alongside necessary
+            policy changes to complement education efforts.
+          </p>
+          <p class="pt-4">
+            Youth leaders like Trishna and Dimpy exemplify the transformative
+            power of young people. Trishna promotes organic farming and
+            alternative livelihoods, while Dimpy has successfully mobilised over
+            100 farmers and initiated school nutrition gardens. These efforts
+            illustrate the innovative potential of youth involvement, reminiscent
+            of past technological revolutions driven by young minds.
+          </p>
+          <p class="pt-4">
+            Key takeaways stress the need to position young people at the centre
+            of agro-ecological initiatives, dismantle the stigma around farming,
+            and implement systemic policy changes. The session concluded with the
+            introduction of “We, The Changemakers,” a guide aimed at empowering
+            youth with the principles of agroecology to enhance resilience,
+            resource efficiency, and social equity in food systems. This approach
+            not only addresses current challenges but also lays the groundwork for
+            a sustainable future.
+          </p>
         </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/akshit.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Akshit Jain</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/faciliator/oshin.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Oshin Dhawan</p>
-            <p class="text-white">ComMutiny - The Youth Collective</p>
-          </div>
-        </div>
-
-        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
-          Format: Interactive Workshop
-        </h3>
-        <h3 class="text-lg text-white p-3 px-7 pb-10">
-          Collaborator: ComMunity, VartaLeap
-        </h3>
-      </div>
-      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
-        <p class="">
-          Highlighting the importance of moving from fear-driven to hope-driven
-          responses, the discussions during the session emphasised resilience
-          and community-driven action. Participants identified the disconnect
-          between problem areas and where people live as a barrier to urgent
-          action, as it creates a lack of immediacy in addressing climate change
-          issues.
-        </p>
-        <p class="pt-4">
-          The session advocated for nurturing all priority needs, recognizing
-          intersectionalities, and inspiring stakeholders to translate intention
-          into action. The N.O.U.R.I.S.H framework was introduced as a guide to
-          harness hope and agency.
-        </p>
-        <p class="pt-4">
-          N: Nurture all the priority needs together <br />
-          O: Onboard all the other themes by highlighting intersectionalities
-          <br />U: Uncover the hidden layers of mainstream mindset <br />R:
-          Realise short term and long term goals <br />I: Inspire influencers
-          and insiders among all stakeholders to move from intention to actionbr
-          <br />
-          S: Spark seeing, being, and doing together <br />
-          H: Harness hope and agency
-        </p>
-        <p class="pt-4">
-          Youth leaders shared experiences of impactful community engagement
-          through art and environmental education, demonstrating the power of
-          grassroots initiatives.
-        </p>
-        <p class="pt-4">
-          Key challenges discussed included the limited reach of climate
-          resilience efforts to vulnerable populations, high climate-related
-          displacements, and the difficulty of utilising common spaces in
-          densely populated areas. Designing effective local policies and
-          engaging various stakeholders were also noted, highlighting the
-          complexity of systems change.
-        </p>
-        <p class="pt-4">
-          The session underscored the necessity of practical tools and systems
-          that enable individuals to make everyday changes and the role of
-          economic drivers in motivating climate-friendly behaviours.
-        </p>
-        <p class="pt-4">
-          Key takeaways included the need for an integrated approach aligning
-          goals across sectors, understanding community needs, and fostering
-          decentralized planning. The session concluded with a call to action
-          for individuals to embrace minimalistic options and initiate change
-          within themselves, thereby contributing to broader climate priorities.
-        </p>
-      </div>
     </div>
-
-    <!-- Micro Equity Section Start -->
-    <section
-      id="youth-led"
-      class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-20"
-    >
-      <div class="lg:max-w-2xl lg:p-0 p-5">
-        <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">02.</h3>
-        <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10">
-          Youth-led Food Transformation using Agroecological Modules
-        </p>
-      </div>
-      <div>
-        <img
-          src="/assets/images/grounded-climate/youth-led-banner.png"
-          alt=""
-        />
-      </div>
-    </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="lg:w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/saloni.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Saloni Goel</p>
-            <p class="text-white">CoMmunity - The Youth Collective</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/deep.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Deepjyoti Sonu Brahma</p>
-            <p class="text-white">Farm2Food Foundation</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/faciliator/gagan.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Gagan Jyot Kaur</p>
-          </div>
-        </div>
-        <h3 class="text-lg text-white p-3 px-7">Speakers:</h3>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/speakers/trish.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Trishnamoni Hazarika</p>
-          </div>
-        </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/speakers/dummy.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Dimpy Dutta</p>
-          </div>
-        </div>
-        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
-          Format: Interactive workshop
-        </h3>
-        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
-        <div class="flex gap-3 px-7 pb-10">
-          <img
-            class="w-32"
-            src="/assets/images/grounded-climate/collaborators/farm.png"
-            alt=""
-          />
-          <img
-            class="w-32"
-            src="/assets/images/grounded-climate/collaborators/community.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg">
-        <p class="">
-          Exploring the pivotal role young people play in transforming food
-          systems, this session emphasised the importance of youth leadership in
-          challenging perceptions that farming is not appealing, addressing
-          urbanisation desires, and countering the risks associated with
-          agriculture.
-        </p>
-        <p class="pt-4">
-          Women often encounter institutional barriers when trying to access
-          capital and enter larger markets, which makes scaling their businesses
-          difficult. Moving beyond the village level requires substantial
-          funding, but that capital is often inaccessible due to risk
-          perceptions in the formal financial system. Women entrepreneurs also
-          struggle to break into mainstream markets, which remain opaque and
-          hard to navigate without adequate support and knowledge.
-        </p>
-        <p class="pt-4">
-          Currently, 1200 youth leaders are actively engaged in agroecology,
-          focusing on understanding diverse food systems and the challenges
-          faced by farmers. A significant barrier identified was the lack of
-          awareness at the grassroots level and the difficulty in marketing
-          organic products. This highlights the need for government support in
-          financial aid and infrastructure development, alongside necessary
-          policy changes to complement education efforts.
-        </p>
-        <p class="pt-4">
-          Youth leaders like Trishna and Dimpy exemplify the transformative
-          power of young people. Trishna promotes organic farming and
-          alternative livelihoods, while Dimpy has successfully mobilised over
-          100 farmers and initiated school nutrition gardens. These efforts
-          illustrate the innovative potential of youth involvement, reminiscent
-          of past technological revolutions driven by young minds.
-        </p>
-        <p class="pt-4">
-          Key takeaways stress the need to position young people at the centre
-          of agro-ecological initiatives, dismantle the stigma around farming,
-          and implement systemic policy changes. The session concluded with the
-          introduction of “We, The Changemakers,” a guide aimed at empowering
-          youth with the principles of agroecology to enhance resilience,
-          resource efficiency, and social equity in food systems. This approach
-          not only addresses current challenges but also lays the groundwork for
-          a sustainable future.
-        </p>
-      </div>
+      
+     
     </div>
-    <!-- Micro Equity Section End -->
-    <!-- Poineering Start -->
+    <!-- Youth Led End -->
+    <!-- building-resilience Start -->
     <section id="building-resilience">
       <div
-        class="lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10"
       >
-        <div class="lg:p-0 p-5">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">03.</h3>
-          <p class="text-white lg:text-2xl text-xl pt-3 lg:px-10 lg:w-96">
-            Building Resilience for Vulnerable People: Systemic Risk and
-            Response Perspective
-          </p>
-        </div>
-        <div>
-          <img
-            src="/assets/images/grounded-climate/building-banner.png"
-            alt=""
-          />
-        </div>
+        <div class="flex flex-col lg:flex-row w-full min-h-">
+          <!-- Left Section -->
+          <div class="bg-[#904CAC] text-white lg:w-1/3 p-8 flex items-center">
+              <div>
+                <h2 class="text-4xl font-bold text-[#F5D47B] lg:px-10">03.</h2>
+                  <h1 class="text-2xl lg:text-4xl mt-4 lg:px-10">Building Resilience for Vulnerable People: Systemic Risk and
+                    Response Perspective</h1>
+              </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="lg:w-2/3 flex justify-center items-center w-full">
+              <img src="/assets/images/grounded-climate/building-banner.png" alt="Panel Discussion" class="w-full h-auto shadow-lg">
+          </div>
+      </div>
       </div>
     </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="lg:w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/shama.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Shama Karkal</p>
-            <p class="text-white">Catalyst Foundation</p>
+    <div class="lg: justify-center bg-[#7E3F98]">
+      <div class="lg:flex ">
+        <!-- Left Section -->
+        <div class="bg-[#7E3E97] text-white lg:w-1/3 p-8 flex items-start">
+          <div class="">
+            <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+        
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/shama.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Shama Karkal</p>
+                <p class="text-white">Catalyst Foundation</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/faciliator/siddhanth.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Siddhanth Sawaney</p>
+              </div>
+            </div>
+        
+            <div class="text-lg text-white p-3 px-7 border-b border-dotted">
+              <h3>Speakers:</h3>
+              <p>Sarah Hendel-Blackford</p>
+            </div>
+        
+            <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+              Format: World Cafe
+            </h3>
+            <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+            <div class="flex gap-3 px-7 pb-10">
+              <img
+                class="w-32"
+                src="/assets/images/grounded-climate/collaborators/asra.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/faciliator/siddhanth.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Siddhanth Sawaney</p>
-          </div>
+        
+        <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg lg:w-2/3 justify-center items-center w-full">
+          <p class="">
+            Centred on the ASRA’s Systemic Risk Assessment/Systemic Risk Response
+            tool, this session aimed to gather feedback on its applicability from
+            Indian practitioners.
+          </p>
+          <p class="pt-4">
+            Participants appreciated the principles and the tool for their
+            potential to foster a comprehensive understanding of systemic risk by
+            encouraging users to consider multiple, interconnected risks
+            simultaneously. This holistic approach was recognized for its ambition
+            to build a field around systemic risk response, which could enhance
+            the depth and effectiveness of interventions. The tool’s framework was
+            seen as a valuable starting point for fostering collaboration and
+            dialogue among diverse stakeholders.
+          </p>
+          <p class="pt-4">
+            Participants also provided constructive criticism, noting that the
+            criteria are overly complex and filled with jargon, making it
+            difficult for users to engage effectively. Simplification, including
+            the use of images or sketches, was suggested to enhance usability and
+            scalability.
+          </p>
+          <p class="pt-4">
+            The principles underpinning the tool were regarded as universal but
+            lacked practical direction, failing to resonate with on-ground
+            realities. Participants highlighted the need for a more targeted
+            approach, allowing users to prioritise and justify their focus areas
+            without being overwhelmed by exhaustive criteria.
+          </p>
+          <p class="pt-4">
+            During the Q&A, concerns were raised about the tool’s purpose—whether
+            it serves for evaluation or risk identification. It was clarified that
+            the tool is intended to consider multiple risks simultaneously,
+            advocating for a systemic response rather than addressing isolated
+            risks.
+          </p>
+          <p class="pt-4">
+            Key actions identified included the need for user guidance to make the
+            tool more accessible and relevant. Further collaboration between
+            Swasti, ASRA, and experts like Professor Partha was proposed to refine
+            the principles and criteria, ensuring they are both practical and
+            adaptable to diverse contexts.
+          </p>
         </div>
-
-        <div class="text-lg text-white p-3 px-7 border-b border-dotted">
-          <h3>Speakers:</h3>
-          <p>Sarah Hendel-Blackford</p>
-        </div>
-
-        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
-          Format: World Cafe
-        </h3>
-        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
-        <div class="flex gap-3 px-7 pb-10">
-          <img
-            class="w-32"
-            src="/assets/images/grounded-climate/collaborators/asra.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
-        <p class="">
-          Centred on the ASRA’s Systemic Risk Assessment/Systemic Risk Response
-          tool, this session aimed to gather feedback on its applicability from
-          Indian practitioners.
-        </p>
-        <p class="pt-4">
-          Participants appreciated the principles and the tool for their
-          potential to foster a comprehensive understanding of systemic risk by
-          encouraging users to consider multiple, interconnected risks
-          simultaneously. This holistic approach was recognized for its ambition
-          to build a field around systemic risk response, which could enhance
-          the depth and effectiveness of interventions. The tool’s framework was
-          seen as a valuable starting point for fostering collaboration and
-          dialogue among diverse stakeholders.
-        </p>
-        <p class="pt-4">
-          Participants also provided constructive criticism, noting that the
-          criteria are overly complex and filled with jargon, making it
-          difficult for users to engage effectively. Simplification, including
-          the use of images or sketches, was suggested to enhance usability and
-          scalability.
-        </p>
-        <p class="pt-4">
-          The principles underpinning the tool were regarded as universal but
-          lacked practical direction, failing to resonate with on-ground
-          realities. Participants highlighted the need for a more targeted
-          approach, allowing users to prioritise and justify their focus areas
-          without being overwhelmed by exhaustive criteria.
-        </p>
-        <p class="pt-4">
-          During the Q&A, concerns were raised about the tool’s purpose—whether
-          it serves for evaluation or risk identification. It was clarified that
-          the tool is intended to consider multiple risks simultaneously,
-          advocating for a systemic response rather than addressing isolated
-          risks.
-        </p>
-        <p class="pt-4">
-          Key actions identified included the need for user guidance to make the
-          tool more accessible and relevant. Further collaboration between
-          Swasti, ASRA, and experts like Professor Partha was proposed to refine
-          the principles and criteria, ensuring they are both practical and
-          adaptable to diverse contexts.
-        </p>
-      </div>
+    </div>
+      
+     
     </div>
 
-    <!-- Poineering End -->
+    <!-- building-resilience End -->
     <!-- integrated-climate Start -->
     <section id="integrated-climate">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10"
       >
-        <div class="lg:p-0 p-5">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">04.</h3>
-          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
-            Integrated Climate and Health Response
-          </p>
-        </div>
-        <div>
-          <img src="/assets/images/grounded-climate/shiv-banner.png" alt="" />
-        </div>
+        <div class="flex flex-col lg:flex-row w-full min-h-">
+          <!-- Left Section -->
+          <div class="bg-[#904CAC] text-white lg:w-1/3 p-8 flex items-center">
+              <div>
+                <h2 class="text-4xl font-bold text-[#F5D47B] lg:px-10">04.</h2>
+                  <h1 class="text-2xl lg:text-4xl mt-4 lg:px-10">Integrated Climate and Health Response</h1>
+              </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="lg:w-2/3 flex justify-center items-center w-full">
+              <img src="/assets/images/grounded-climate/shiv-banner.png" alt="Panel Discussion" class="w-full h-auto shadow-lg">
+          </div>
+      </div>
       </div>
     </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="lg:w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3">
-          <img
-            src="/assets/images/grounded-climate/faciliator/binali.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Binali Suhandani</p>
+    <div class="lg: justify-center bg-[#7E3F98]">
+      <div class="lg:flex ">
+        <!-- Left Section -->
+        <div class="bg-[#7E3E97] text-white lg:w-1/3 p-8 flex items-start">
+          <div class="">
+            <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+        
+            <div class="flex px-7 items-center gap-3">
+              <img
+                src="/assets/images/grounded-climate/faciliator/binali.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Binali Suhandani</p>
+              </div>
+            </div>
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/faciliator/shiv.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Shiv Kumar</p>
+              </div>
+            </div>
+        
+            <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
+              Format: Roundtable Discussion
+            </h3>
+            <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+            <div class="flex gap-3 px-7 pb-10">
+              <img
+                class="w-32"
+                src="/assets/images/grounded-climate/collaborators/cphc.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/faciliator/shiv.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Shiv Kumar</p>
-          </div>
+        
+        <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg lg:w-2/3 justify-center items-center w-full">
+          <p class="pt-4">
+            Delving into the vital intersection between health and climate, the
+            Integrated Climate and Health Response session stressed the necessity
+            of collaborative efforts for scalable impacts. The CPHC alliance, a
+            USAID-supported initiative led by Swasti, exemplifies a
+            multi-stakeholder coalition with over 30 members, including USAID and
+            ADB, dedicated to comprehensive primary health care.
+          </p>
+          <p class="pt-4">
+            The discussions highlighted that achieving scale requires collective
+            action rooted in shared values and ambitious goals. The energy of
+            leadership and the role of a backbone organisation are pivotal in
+            maintaining coalition cohesion and a sense of urgency. Clearly
+            defining roles and benefits for each participant is crucial to ensure
+            accountability and shared ownership within the coalition.
+          </p>
+          <p class="pt-4">
+            The alliance aims to enhance health outcomes through preventive and
+            promotive care, focusing on patient-centric approaches. Embedding
+            goals into systems and offering well-defined service packages are key
+            strategies for achieving desired outcomes. Embracing complexity in
+            primary healthcare is essential for long-term success and
+            sustainability.
+          </p>
+          <p class="pt-4">
+            Addressing challenges, the session emphasised the importance of
+            government collaboration, resource optimization, and the improvement
+            of awareness and infrastructure. The coalition seeks to expand its
+            reach beyond India to Asia, leveraging collective expertise and frugal
+            innovations.
+          </p>
+          <p class="pt-4">
+            The evolving CPHC playbook focuses on institutionalising
+            sustainability, enhancing stakeholder capacities, and adapting
+            successful models from other countries. By exploring public-private
+            partnerships, the session called for innovative approaches to
+            healthcare delivery and community engagement, reinforcing the
+            coalition’s vision for comprehensive, patient-centred care.
+          </p>
         </div>
-
-        <h3 class="text-lg text-white p-3 px-7 border-b border-dotted">
-          Format: Roundtable Discussion
-        </h3>
-        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
-        <div class="flex gap-3 px-7 pb-10">
-          <img
-            class="w-32"
-            src="/assets/images/grounded-climate/collaborators/cphc.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
-        <p class="pt-4">
-          Delving into the vital intersection between health and climate, the
-          Integrated Climate and Health Response session stressed the necessity
-          of collaborative efforts for scalable impacts. The CPHC alliance, a
-          USAID-supported initiative led by Swasti, exemplifies a
-          multi-stakeholder coalition with over 30 members, including USAID and
-          ADB, dedicated to comprehensive primary health care.
-        </p>
-        <p class="pt-4">
-          The discussions highlighted that achieving scale requires collective
-          action rooted in shared values and ambitious goals. The energy of
-          leadership and the role of a backbone organisation are pivotal in
-          maintaining coalition cohesion and a sense of urgency. Clearly
-          defining roles and benefits for each participant is crucial to ensure
-          accountability and shared ownership within the coalition.
-        </p>
-        <p class="pt-4">
-          The alliance aims to enhance health outcomes through preventive and
-          promotive care, focusing on patient-centric approaches. Embedding
-          goals into systems and offering well-defined service packages are key
-          strategies for achieving desired outcomes. Embracing complexity in
-          primary healthcare is essential for long-term success and
-          sustainability.
-        </p>
-        <p class="pt-4">
-          Addressing challenges, the session emphasised the importance of
-          government collaboration, resource optimization, and the improvement
-          of awareness and infrastructure. The coalition seeks to expand its
-          reach beyond India to Asia, leveraging collective expertise and frugal
-          innovations.
-        </p>
-        <p class="pt-4">
-          The evolving CPHC playbook focuses on institutionalising
-          sustainability, enhancing stakeholder capacities, and adapting
-          successful models from other countries. By exploring public-private
-          partnerships, the session called for innovative approaches to
-          healthcare delivery and community engagement, reinforcing the
-          coalition’s vision for comprehensive, patient-centred care.
-        </p>
-      </div>
+    </div>
+      
+     
     </div>
 
     <!-- integrated-climate End -->
@@ -853,85 +883,93 @@
     <!-- Gloabal Warming Start -->
     <section id="global-warming">
       <div
-        class="section lg:flex items-center justify-center bg-[#904DAC] mt-10 lg:space-x-24"
+        class="lg:flex items-center justify-center bg-[#904DAC] mt-10"
       >
-        <div class="lg:p-0 p-5">
-          <h3 class="text-3xl text-[#F5D47B] #7E3F98 lg:px-10">05.</h3>
-          <p class="text-white text-xl lg:text-2xl pt-3 lg:px-10 lg:w-96">
-            Global Warming: A Systems Mapping Game
-          </p>
-        </div>
-        <div>
-          <img
-            src="/assets/images/innovative-finance/market-access.png"
-            alt=""
-          />
-        </div>
+        <div class="flex flex-col lg:flex-row w-full min-h-">
+          <!-- Left Section -->
+          <div class="bg-[#904CAC] text-white lg:w-1/3 p-8 flex items-center">
+              <div>
+                <h2 class="text-4xl font-bold text-[#F5D47B] lg:px-10">05.</h2>
+                  <h1 class="text-2xl lg:text-4xl mt-4 lg:px-10">Global Warming: A Systems Mapping Game</h1>
+              </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="lg:w-2/3 flex justify-center items-center w-full">
+              <img src="/assets/images/grounded-climate/global-banner.png" alt="Panel Discussion" class="w-full h-auto shadow-lg">
+          </div>
+      </div>
       </div>
     </section>
-    <div class="lg:flex justify-center bg-[#7E3F98]">
-      <div class="lg:w-[50%]">
-        <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
-
-        <div class="flex px-7 items-center gap-3 border-b border-dotted">
-          <img
-            src="/assets/images/grounded-climate/speakers/dummy.png"
-            class="w-20 mb-3"
-            alt=""
-          />
-          <div>
-            <p class="text-[#F5D47B]">Suresh C.</p>
+    <div class="lg: justify-center bg-[#7E3F98]">
+      <div class="lg:flex ">
+        <!-- Left Section -->
+        <div class="bg-[#7E3E97] text-white lg:w-1/3 p-8 flex items-start">
+          <div class="">
+            <h3 class="text-lg text-white p-3 px-7">Facilitator:</h3>
+        
+            <div class="flex px-7 items-center gap-3 border-b border-dotted">
+              <img
+                src="/assets/images/grounded-climate/speakers/dummy.png"
+                class="w-20 mb-3"
+                alt=""
+              />
+              <div>
+                <p class="text-[#F5D47B]">Suresh C.</p>
+              </div>
+            </div>
+        
+            <h3 class="text-white pb-5 px-7 p-3 border-b border-dotted">
+              Format: Group Game
+            </h3>
+            <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
+            <div class="flex gap-3 px-7 pb-10">
+              <img
+                class="w-32"
+                src="/assets/images/grounded-climate/collaborators/si.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-
-        <h3 class="text-white pb-5 px-7 p-3 border-b border-dotted">
-          Format: Group Game
-        </h3>
-        <h3 class="text-lg text-white p-3 px-7">Collaborator:</h3>
-        <div class="flex gap-3 px-7 pb-10">
-          <img
-            class="w-32"
-            src="/assets/images/grounded-climate/collaborators/si.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="bg-[#EDE2F4] lg:p-10 p-5 w-[100%] text-lg">
-        <p class="">
-          An engaging exploration of the intricate interconnections within
-          natural systems was provided in this session on climate change.
-          Participants engaged in a systems mapping exercise to understand the
-          complex relationships and impacts of global warming, aiming to
-          identify actionable strategies for change. 
-        </p>
-        <p class="pt-4">
-            Key takeaways highlighted
-            the lack of education on system dynamics, emphasising that
-            interventions in one area can significantly impact others. The session
-            stressed the importance of developing sustainable solutions that do
-            not create future problems. 
-        </p>
-        <p class="pt-4">
-            Participants discovered surprising facts,
-            such as the ocean being the primary source of Earth’s oxygen and the
-            complexities of waste recycling in renewable technologies. The
-            exercise also revealed the interconnectedness of global phenomena,
-            such as how desertification affects the Amazon rainforest and the
-            increased pollen transfer leading to health issues. 
-        </p>
-        <p class="pt-4">
-            The workshop
-            fostered a sense of community among climate advocates,
-            decision-makers, and curious explorers, all committed to safeguarding
-            the planet. It served as a catalyst for climate action, encouraging
-            dialogue as a tool for fostering knowledge and initiating change. The
-            session concluded with a call to “Go blue to go green,” emphasising
-            the importance of ocean health in achieving sustainability.
-        </p>
         
-      </div>
+        <div class="bg-[#EDE2F4] p-5 lg:p-10 w-[100%] text-lg lg:w-2/3 justify-center items-center w-full">
+          <p class="">
+            An engaging exploration of the intricate interconnections within
+            natural systems was provided in this session on climate change.
+            Participants engaged in a systems mapping exercise to understand the
+            complex relationships and impacts of global warming, aiming to
+            identify actionable strategies for change. 
+          </p>
+          <p class="pt-4">
+              Key takeaways highlighted
+              the lack of education on system dynamics, emphasising that
+              interventions in one area can significantly impact others. The session
+              stressed the importance of developing sustainable solutions that do
+              not create future problems. 
+          </p>
+          <p class="pt-4">
+              Participants discovered surprising facts,
+              such as the ocean being the primary source of Earth’s oxygen and the
+              complexities of waste recycling in renewable technologies. The
+              exercise also revealed the interconnectedness of global phenomena,
+              such as how desertification affects the Amazon rainforest and the
+              increased pollen transfer leading to health issues. 
+          </p>
+          <p class="pt-4">
+              The workshop
+              fostered a sense of community among climate advocates,
+              decision-makers, and curious explorers, all committed to safeguarding
+              the planet. It served as a catalyst for climate action, encouraging
+              dialogue as a tool for fostering knowledge and initiating change. The
+              session concluded with a call to “Go blue to go green,” emphasising
+              the importance of ocean health in achieving sustainability.
+          </p>
+        </div>
     </div>
-
+      
+     
+    </div>
     <!-- Gloabal Warming End -->
     
    <!-- Quick Link Start -->
@@ -943,82 +981,82 @@
       <div class="flex flex-wrap justify-center gap-4 items-end">
         <a
           href="/executive-summary.html"
-          class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center py-2 group text-white border border-gray-500 hover:bg-[#DDDDDD] hover:text-[#7F4197] rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Executive Summary</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/keynote-speeches.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Keynote Speeches</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/csi-awards.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>CSI Awards</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/echos-of-earth.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Performances and Cultural Expressions</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/wicked-solutions.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Wicked Solutions</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/notable-events.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Notable Events</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/film-showcase.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Film Showcase</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/exhibitions-and-photography.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Exhibitions and Photography</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/coalition-launches-and-partnerships.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Coalition Launches & Partnerships</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
@@ -1028,28 +1066,28 @@
         </p>
         <a
           href="/innovative-finance.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Innovative Finance</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/implementation-fidelity-and-quality.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Implementation Fidelity and Quality</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
         <a
           href="/grounded-climate-response.html"
-          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-yellow-400"
+          class="px-4 lg:w-auto w-80 justify-center group hover:bg-[#DDDDDD] hover:text-[#7F4197] py-2 text-white border border-gray-500 rounded-full flex items-center space-x-2 transition hover:border-[#F5D47B]"
         >
           <span>Grounded Climate Response</span>
-          <span class="text-yellow-400 group-hover:text-[#7F4197]"
+          <span class="text-[#F5D47B] group-hover:text-[#7F4197]"
             ><i class="fas fa-arrow-right -rotate-45"></i
           ></span>
         </a>
